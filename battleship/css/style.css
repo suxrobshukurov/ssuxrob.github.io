@@ -22,7 +22,6 @@ body {
 }
 
 table {
-    border: 1px solid red;
     position: absolute;
     left: 13.4vw;
     top: 7.6vw;
@@ -30,7 +29,6 @@ table {
 }
 
 td {
-    border: 1px solid red;
     width: 7.198vw;
     height: 7.199vw;
 }
@@ -46,7 +44,7 @@ form {
 form input {
     background-color: rgb(152, 207, 113);
     border-color: rgb(83, 175, 19);
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 .hit {
@@ -61,7 +59,6 @@ form input {
 
 @media screen and (max-width: 900px) {
     td {
-        border: 1px solid red;
         width: 7.018vw;
         height: 7.019vw;
     }
@@ -69,7 +66,6 @@ form input {
 
 @media screen and (max-width: 700px) {
     td {
-        border: 1px solid red;
         width: 6.858vw;
         height: 6.859vw;
     }
@@ -77,7 +73,6 @@ form input {
 
 @media screen and (max-width: 500px) {
     td {
-        border: 1px solid red;
         width: 6.618vw;
         height: 6.619vw;
     }
@@ -85,7 +80,6 @@ form input {
 
 @media screen and (max-width: 420px) {
     td {
-        border: 1px solid red;
         width: 6.418vw;
         height: 6.419vw;
     }

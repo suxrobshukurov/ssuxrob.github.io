@@ -53,61 +53,66 @@ let model = {
 };
 
 let controller = {
-    guesses: 0,
-    processGuess: function(guess) {
-        let location = parseGuess(guess);
-        if (location) {
-            this.guesses++;
-            let hit = model.fire(location);
-            if (hit && model.shipsSunk === model.numShips) {
-                view.displayMessage("Вы потопили все коробли за " + this.guesses + " выстрелов");
+        guesses: 0,
+        processGuess: function(guess) {
+            // let location = parseGuess(guess);
+            let location = guess;
+            if (location) {
+                this.guesses++;
+                let hit = model.fire(location);
+                if (hit && model.shipsSunk === model.numShips) {
+                    view.displayMessage("Вы потопили все коробли за " + this.guesses + " выстрелов");
+                }
             }
         }
     }
-}
-
-function parseGuess(guessUser) {
-    let guess = guessUser.toUpperCase();
-    let alphabet = ["A", "B", "C", "D", "E", "F", "G"];
-    if (guess === null || guess.length !== 2) {
-        alert("Ой, пожалуйста, введите букву и цифру на доске.");
-    } else {
-        let firstChar = guess.charAt(0);
-        let row = alphabet.indexOf(firstChar);
-        let column = guess.charAt(1);
-
-        if (isNaN(row) || isNaN(column)) {
-            alert("Упс, этого нет на доске.");
-        } else if (row < 0 || row >= model.boardSize || column < 0 || column >= model.boardSize) {
-            alert("Упс, ваши кординаты не помешаются в доску.");
+    /*
+    function parseGuess(guessUser) {
+        let guess = guessUser.toUpperCase();
+        let alphabet = ["A", "B", "C", "D", "E", "F", "G"];
+        if (guess === null || guess.length !== 2) {
+            alert("Ой, пожалуйста, введите букву и цифру на доске.");
         } else {
-            return row + column;
+            let firstChar = guess.charAt(0);
+            let row = alphabet.indexOf(firstChar);
+            let column = guess.charAt(1);
+
+            if (isNaN(row) || isNaN(column)) {
+                alert("Упс, этого нет на доске.");
+            } else if (row < 0 || row >= model.boardSize || column < 0 || column >= model.boardSize) {
+                alert("Упс, ваши кординаты не помешаются в доску.");
+            } else {
+                return row + column;
+            }
+        }
+        return null;
+    }
+
+    function init() {
+        let fireButton = document.getElementById("fireButton");
+        fireButton.onclick = handleFireButton;
+        let guessInput = document.getElementById("guessInput");
+        guessInput.onkeydown = handleKeyPress;
+    }
+
+    function handleFireButton() {
+        let guessInput = document.getElementById("guessInput");
+        let guess = guessInput.value;
+
+        controller.processGuess(guess);
+        guessInput.value = "";
+    }
+
+    function handleKeyPress(e) {
+        let fireButton = document.getElementById("fireButton");
+        if (e.keyCode === 13) {
+            fireButton.click();
+            return false;
         }
     }
-    return null;
+    */
+function parseGuessOnClick() {
+    let guessId = String(event.target.id);
+    controller.processGuess(guessId);
 }
-
-function init() {
-    let fireButton = document.getElementById("fireButton");
-    fireButton.onclick = handleFireButton;
-    let guessInput = document.getElementById("guessInput");
-    guessInput.onkeydown = handleKeyPress;
-}
-
-function handleFireButton() {
-    let guessInput = document.getElementById("guessInput");
-    let guess = guessInput.value;
-
-    controller.processGuess(guess);
-    guessInput.value = "";
-}
-
-function handleKeyPress(e) {
-    let fireButton = document.getElementById("fireButton");
-    if (e.keyCode === 13) {
-        fireButton.click();
-        return false;
-    }
-}
-
-window.onload = init;
+// window.onload = init;
