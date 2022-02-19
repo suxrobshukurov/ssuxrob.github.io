@@ -4,10 +4,11 @@ body {
 
 #board {
     position: relative;
-    width: 64em;
-    height: 54em;
+    width: 80vw;
+    height: 100vh;
     margin: auto;
     background: url("../img/board.jpg") no-repeat;
+    background-size: contain;
 }
 
 #messageArea {
@@ -15,19 +16,21 @@ body {
     top: 0;
     left: 0;
     color: rgb(83, 175, 19);
-    font-size: 2em;
+    font-size: 1em;
 }
 
 table {
+    border: 1px solid red;
     position: absolute;
-    left: 10.7em;
-    top: 6em;
+    left: 13.4vw;
+    top: 7.6vw;
     border-spacing: 0px;
 }
 
 td {
-    width: 5.87em;
-    height: 5.87em;
+    border: 1px solid red;
+    width: 7.118vw;
+    height: 7.119vw;
 }
 
 form {
@@ -46,8 +49,18 @@ form input {
 
 .hit {
     background: url("../img/ship.png") no-repeat center center;
+    background-size: contain;
 }
 
 .miss {
     background: url("../img/miss.png") no-repeat center center;
+    background-size: contain;
+}
+
+@media screen and (max-width: 30em) {
+    td {
+        border: 1px solid red;
+        width: 6.518vw;
+        height: 6.619vw;
+    }
 }
