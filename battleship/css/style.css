@@ -65,12 +65,26 @@ form input {
 }
 
 @media screen and (max-width: 700px) {
+    #board {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        margin: auto;
+        background: none;
+    }
+    table {
+        left: 4.5vw;
+        top: 39.6vw;
+    }
     td {
-        width: 6.858vw;
-        height: 6.859vw;
+        width: 11.218vw;
+        height: 13.419vw;
+        border: 1px solid green;
     }
 }
 
+
+/* 
 @media screen and (max-width: 500px) {
     td {
         width: 6.618vw;
@@ -83,4 +97,4 @@ form input {
         width: 6.418vw;
         height: 6.419vw;
     }
-}
+} */

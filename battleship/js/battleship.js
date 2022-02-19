@@ -31,6 +31,7 @@ let model = {
                 ship.hits[index] = "hit";
                 view.displayHit(guess);
                 view.displayMessage("Вы попали по кораблю!");
+                controller.guesses++;
                 if (this.isShunk(ship)) {
                     view.displayMessage("Вы уничтожали корабль!")
                     this.shipsSunk++;
@@ -40,6 +41,7 @@ let model = {
         }
         view.displayMiss(guess);
         view.displayMessage("Вы промахнулись.");
+        controller.guesses++;
         return false;
     },
     isShunk: function(ship) {
@@ -58,7 +60,8 @@ let controller = {
             // let location = parseGuess(guess);
             let location = guess;
             if (location) {
-                this.guesses++;
+
+                // this.guesses++;
                 let hit = model.fire(location);
                 if (hit && model.shipsSunk === model.numShips) {
                     view.displayMessage("Вы потопили все коробли за " + this.guesses + " выстрелов");
