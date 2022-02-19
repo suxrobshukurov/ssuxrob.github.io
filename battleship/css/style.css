@@ -7,7 +7,7 @@ body {
     width: 64em;
     height: 54em;
     margin: auto;
-    background: url("/img/board.jpg") no-repeat;
+    background: url("../img/board.jpg") no-repeat;
 }
 
 #messageArea {
@@ -45,9 +45,9 @@ form input {
 }
 
 .hit {
-    background: url("/img/ship.png") no-repeat center center;
+    background: url("../img/ship.png") no-repeat center center;
 }
 
 .miss {
-    background: url("/img/miss.png") no-repeat center center;
+    background: url("../img/miss.png") no-repeat center center;
 }
