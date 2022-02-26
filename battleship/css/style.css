@@ -2,14 +2,16 @@ body {
     background-color: #000;
     font-size: 16px;
     min-width: 320px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 #board {
     position: relative;
     width: 80vw;
-    height: 100vh;
-    margin: auto;
-    background: url("../img/board.jpg") no-repeat;
+    height: 40em;
+    margin: 0 auto;
+    /* background: url("../img/board.jpg") no-repeat; */
     background-size: contain;
 }
 
@@ -18,19 +20,21 @@ body {
     top: 0;
     left: 0;
     color: rgb(83, 175, 19);
-    font-size: 4vw;
+    font-size: 2em;
 }
 
 table {
     position: absolute;
-    left: 13.4vw;
-    top: 7.6vw;
+    border: 1px solid green;
+    left: 8em;
+    top: 4.5em;
     border-spacing: 0px;
 }
 
 td {
-    width: 7.198vw;
-    height: 7.199vw;
+    border: 1px solid green;
+    width: 4.2em;
+    height: 4.2em;
 }
 
 form {
@@ -57,12 +61,17 @@ form input {
     background-size: contain;
 }
 
-@media screen and (max-width: 900px) {
-    td {
-        width: 7.018vw;
-        height: 7.019vw;
+
+/* @media screen and (max-width: 900px) {
+    table {
+        left: 5.9em;
+        top: 3.3em;
     }
-}
+    td {
+        width: 3.02em;
+        height: 3.04em;
+    }
+} */
 
 @media screen and (max-width: 700px) {
     #board {
