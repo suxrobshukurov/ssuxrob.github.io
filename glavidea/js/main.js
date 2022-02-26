@@ -1,6 +1,13 @@
+window.onload = function() {
+    let menuBtn = document.querySelector('.menu-btn');
+    let menu = document.querySelector('.header__menu');
+
+    menuBtn.addEventListener('click', function() {
+        menuBtn.classList.toggle('active');
+        menu.classList.toggle("active");
+    })
+};
+
 jQuery(function() {
-    jQuery('.burger').click(function() {
-        jQuery('.burger span').toggleClass("active");
-        jQuery('ul.nav-list').toggleClass("animate");
-    });
+    console.log("hello");
 });

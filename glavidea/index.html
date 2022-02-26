@@ -1,29 +1,63 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
+    <title>ГлавИдея — Просто так быстрее</title>
     <link rel="stylesheet" href="css/style.min.css">
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
-  </head>
-  <body>
-    <section class="header">
-      <div class="container">
-        <div class="logo"><img class="logo-img" src="img/logo.svg" alt="ГлавИдея"></div>
-        <ul class="nav-list">
-          <li class="nav-item"><a class="nav-link" href="#">О нас</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Узнать больше</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Часто задаваемые вопросы</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
-        </ul>
-        <ul class="header-btns">
-          <li class="btn"><a class="btn-link" href="#">Подписка</a></li>
-          <li class="btn"><a class="btn-link" href="#">Войти</a></li>
-        </ul>
-        <div class="burger"><span></span></div>
-      </div>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <section class="header">
+                <div class="header__logo">
+                    <a href="#"> <img src="img/logo.webp" alt="GlavIdea"></a>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__menu">
+                        <li class="menu__item"><a class="item__link" href="#">Главная</a></li>
+                        <li class="menu__item"><a class="item__link" href="#">Узнать больше</a>
+                            <ul class="menu__submenu">
+                                <li class="submenu__item"> <a class="item__link" href="#">Узнать больше</a></li>
+                                <li class="submenu__item"> <a class="item__link" href="#">О нас</a></li>
+                                <li class="submenu__item"> <a class="item__link" href="#">Бесплатный экземпляр</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item"> <a class="item__link" href="#">Часто задаваемые вопросы</a></li>
+                        <li class="menu__item"> <a class="item__link" href="#">Контакты</a></li>
+                    </ul>
+                    <div class="menu-btn"><span> </span><span> </span><span> </span></div>
+                </nav>
+                <div class="header__btns">
+                    <div class="btn btn__action">
+                        <a href="#"> <span>Подпишитесь</span></a>
+                    </div>
+                    <div class="btn btn__main">
+                        <a href="#"> <span>Войти</span></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+    <section class="promo">
+        <div class="container">
+            <div class="promo__title">
+                <p>Сжатые версии лучших книг для христианских лидеров</p><span> </span>
+            </div>
+            <div class="promo__description">
+                <h1>Узнавай больше. Учись быстрее. Руководи лучше.</h1>
+            </div>
+            <div class="promo__btn">
+                <div class="btn btn__main">
+                    <a href="#"> <span>Попробуйте бесплатно</span></a>
+                </div>
+            </div>
+        </div>
     </section>
-  </body>
+</body>
+
 </html>
