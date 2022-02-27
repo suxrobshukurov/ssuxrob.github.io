@@ -3,26 +3,100 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
+    <title>ГлавИдея — Просто так быстрее</title>
     <link rel="stylesheet" href="css/style.min.css">
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
   </head>
   <body>
-    <section class="header">
+    <header>
       <div class="container">
-        <div class="logo"><img class="logo-img" src="img/logo.svg" alt="ГлавИдея"></div>
-        <ul class="nav-list">
-          <li class="nav-item"><a class="nav-link" href="#">О нас</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Узнать больше</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Часто задаваемые вопросы</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
-        </ul>
-        <ul class="header-btns">
-          <li class="btn"><a class="btn-link" href="#">Подписка</a></li>
-          <li class="btn"><a class="btn-link" href="#">Войти</a></li>
-        </ul>
-        <div class="burger"><span></span></div>
+        <section class="header"> 
+          <div class="header__logo"><a href="#"> <img src="img/logo.webp" alt="GlavIdea"></a></div>
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li class="menu__item"><a class="item__link" href="#">Главная</a></li>
+              <li class="menu__item"><a class="item__link" href="#">Узнать больше</a>
+                <ul class="menu__submenu"> 
+                  <li class="submenu__item"> <a class="item__link" href="#">Узнать больше</a></li>
+                  <li class="submenu__item"> <a class="item__link" href="#">О нас</a></li>
+                  <li class="submenu__item"> <a class="item__link" href="#">Бесплатный экземпляр</a></li>
+                </ul>
+              </li>
+              <li class="menu__item"> <a class="item__link" href="#">Часто задаваемые вопросы</a></li>
+              <li class="menu__item"> <a class="item__link" href="#">Контакты</a></li>
+            </ul>
+            <div class="menu-btn"><span> </span><span> </span><span> </span></div>
+          </nav>
+          <div class="header__btns">
+            <div class="btn btn__action"><a href="#"> <span>Подпишитесь</span></a></div>
+            <div class="btn btn__main"><a href="#"> <span>Войти</span></a></div>
+          </div>
+        </section>
+      </div>
+    </header>
+    <section class="promo">
+      <div class="overline__bg"></div>
+      <div class="container">
+        <div class="promo__title">
+          <p>Сжатые версии лучших книг для христианских лидеров</p><span> </span>
+        </div>
+        <div class="promo__description">
+          <h1>Узнавай больше. Учись быстрее. Руководи лучше.</h1>
+        </div>
+        <div class="promo__btn">
+          <div class="btn btn__action"><a href="#"> <span>Попробуйте бесплатно</span></a></div>
+        </div>
+      </div>
+    </section>
+    <section class="advantage">
+      <div class="container">
+        <div class="advantage__title"><i class="fa fa-book" aria-hidden="true"> </i>
+          <h2>Будь лидером, оказывающий влияние</h2>
+        </div>
+        <div class="advantage__description"><span class="circle-sketch-highlight">ГлавИдея</span>
+          <p>предоставляет вам доступ к сжатым версиям лучших книг по лидерству, менеджменту и жизни церкви. Эти книги помогут вам:</p>
+        </div>
+        <div class="advantage__list">
+          <ul class="studyfeaturelist">
+            <li class="studyfeaturelist-item cf">
+              <div class="studyfeaturelist-icon"><i class="fa fa-users" aria-hidden="true"></i></div>
+              <div class="studyfeaturelist-detail">
+                <div>
+                  <h4 class="studyfeaturelist-title">Стать эффективным лидером</h4>
+                </div>
+              </div>
+            </li>
+            <li class="studyfeaturelist-item cf">
+              <div class="studyfeaturelist-icon"><i class="fa fa-lightbulb" aria-hidden="true"></i></div>
+              <div class="studyfeaturelist-detail">
+                <div>
+                  <h4 class="studyfeaturelist-title">Обдуманно действовать, сталкиваясь со сложными ситуациями</h4>
+                </div>
+              </div>
+            </li>
+            <li class="studyfeaturelist-item cf">
+              <div class="studyfeaturelist-icon"><i class="fa fa-thumbs-up" aria-hidden="true"></i></div>
+              <div class="studyfeaturelist-detail">
+                <div>
+                  <h4 class="studyfeaturelist-title">Чувствовать уверенность</h4>
+                </div>
+              </div>
+            </li>
+            <li class="studyfeaturelist-item cf">
+              <div class="studyfeaturelist-icon"><i class="fa fa-clock" aria-hidden="true"></i></div>
+              <div class="studyfeaturelist-detail">
+                <div>
+                  <h4 class="studyfeaturelist-title">Получать знания о лидерстве, уделяя обучению намного меньше времени</h4>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="advantage__btn">
+          <div class="btn btn__action"><a href="#"> <span>Попробуйте бесплатно</span></a></div>
+        </div>
       </div>
     </section>
   </body>
