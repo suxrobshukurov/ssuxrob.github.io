@@ -4,7 +4,7 @@ jQuery(function() {
         boxClass: 'wow',
         animateClass: 'animated',
         offset: 160,
-        mobile: true,
+        mobile: false,
         live: true
 
     });
@@ -60,6 +60,11 @@ jQuery(function() {
         // кнопка мобильного меню
         jQuery(document).ready(function() {
             jQuery('.menu-burger').click(function() {
+                jQuery('.menu-burger').toggleClass('open-menu');
+                jQuery('.mob-menu').toggleClass('open');
+                jQuery('body').toggleClass('fixed-page');
+            });
+            jQuery('.nav-link').click(function() {
                 jQuery('.menu-burger').toggleClass('open-menu');
                 jQuery('.mob-menu').toggleClass('open');
                 jQuery('body').toggleClass('fixed-page');
