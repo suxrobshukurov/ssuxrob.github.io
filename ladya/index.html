@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>title</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container border-bottom header-inner">
+        <div class="header__left-part">
+          <div class="header__logo colored"><a class="logo__link" href="/">
+              <svg width="181" height="38" viewBox="0 0 181 38" xmlns="http://www.w3.org/2000/svg">
+                <path class="fill-svg--theme-color" fill-rule="evenodd" clip-rule="evenodd" d="M21.9666 12.5178L21.9611 12.5196L18.5822 9.418L18.5842 9.41617L16.9076 7.89912C12.8274 4.20726 6.50846 4.53027 2.79539 8.59116C-0.94092 12.6775 -0.668537 19.0471 3.43123 22.7686L11.6067 30.1898C15.4776 33.7036 21.2272 33.9741 25.3875 31.0015C21.7555 31.348 17.7082 30.3326 15.2908 28.1269L14.4517 27.3659C14.399 27.3209 14.3468 27.2749 14.2952 27.228L6.11973 19.8068C5.07901 18.8621 4.44851 17.6262 4.24099 16.3281L4.8589 16.1807C6.46278 15.7983 8.15211 16.2311 9.37444 17.3378L17.4261 24.6274C18.1107 25.2471 18.8558 25.7668 19.6422 26.1853C19.7256 26.2277 19.8097 26.2701 19.8947 26.3126C24.8204 28.7735 30.1522 26.9755 33.6154 23.6219L33.61 23.639L34.5567 22.7797C38.6612 19.0538 38.9285 12.6748 35.1812 8.58992C32.6148 5.7924 28.8108 4.77597 25.3604 5.62944L26.835 9.40983C28.7634 9.10659 30.8115 9.74377 32.2336 11.2939C32.9748 12.1019 33.454 13.0574 33.677 14.0551L31.9138 15.0734C29.5613 16.4321 26.7036 16.2948 24.6571 14.7037C23.7656 14.0106 22.8417 13.2664 21.9666 12.5178ZM16.9079 13.2938L14.2238 10.8652C11.7887 8.66176 7.98707 8.84088 5.74741 11.2903C5.5164 11.543 5.31095 11.81 5.13089 12.0881C7.64027 11.8392 10.1621 12.6551 12.0591 14.3725L20.1107 21.6621C22.538 23.8596 26.1643 24.081 28.8409 22.195L30.6363 20.9298L30.6391 20.9337L31.8682 19.8179C32.0621 19.6419 32.2418 19.4558 32.4071 19.261C29.0488 20.5695 25.1732 20.1716 22.202 17.8616C20.4434 16.4944 18.4562 14.8535 16.9029 13.2988L16.9079 13.2938Z"></path>
+                <path class="fill-svg--theme-color" d="M26.3946 5.42972L27.1837 9.36379L26.5995 9.43783C26.4122 9.46158 26.2282 9.50662 26.051 9.57207C25.4769 9.7842 24.8326 9.66234 24.3755 9.25518L22.0196 7.15627C23.261 6.28239 24.6856 5.70338 26.1846 5.46335L26.3946 5.42972Z"></path>
+                <path class="fill--dark" d="M70.8451 20C71.3304 21.7547 72.5813 23.116 74.728 23.116C76.1093 23.116 77.1547 22.6493 77.864 21.716L80.776 23.396C79.3947 25.3933 77.36 26.392 74.672 26.392C72.3573 26.392 70.5 25.692 69.1 24.292C67.7 22.892 67 21.128 67 19C67 16.8907 67.6907 15.136 69.072 13.736C70.4533 12.3173 72.2267 11.608 74.392 11.608C76.4453 11.608 78.1347 12.3173 79.46 13.736C80.804 15.1547 81.476 16.9093 81.476 19C81.476 19.4667 81.4293 19.4773 81.336 20H70.8451ZM70.8451 17H77.7331C77.5061 16.383 77.2293 16.0227 76.576 15.556C75.9413 15.0893 75.2133 15 74.392 15C73.4213 15 72.6187 15.108 71.984 15.612C71.3493 16.0973 71.1211 16.5 70.8451 17Z"></path>
+                <path class="fill--dark" d="M97 23H99V30H95.5V26H86.528V30H83V23H84.708C85.5107 21.8053 85.912 19.7653 85.912 17.656V12H97V23ZM88.572 23H93.472V15.248H89.44V17.656C89.44 19.6347 89.1507 21.6747 88.572 23Z"></path>
+                <path class="fill--dark" d="M113.612 23H116.014V30.0002H112V26H101V12H104.612V23H110V12H113.612V23Z"></path>
+                <path class="fill--dark" d="M143 12H146.612V26H143V21H137.612V26H134V12H137.612V17.612H143V12Z"></path>
+                <path class="fill--dark" d="M160.404 12V15.472H156.036V26H152.424V15.472H148V12H160.404Z"></path>
+                <path class="fill--dark" d="M170.148 11.608C172.033 11.608 173.639 12.3267 174.964 13.764C176.308 15.1827 176.98 16.928 176.98 19C176.98 21.072 176.308 22.8267 174.964 24.264C173.639 25.6827 172.033 26.392 170.148 26.392C168.188 26.392 166.676 25.7107 165.612 24.348V32H162V12H165.612V13.652C166.676 12.2893 168.188 11.608 170.148 11.608ZM166.704 21.856C167.432 22.584 168.356 22.948 169.476 22.948C170.596 22.948 171.52 22.584 172.248 21.856C172.995 21.1093 173.368 20.1573 173.368 19C173.368 17.8427 172.995 16.9 172.248 16.172C171.52 15.4253 170.596 15.052 169.476 15.052C168.356 15.052 167.432 15.4253 166.704 16.172C165.976 16.9 165.612 17.8427 165.612 19C165.612 20.1573 165.976 21.1093 166.704 21.856Z"></path>
+                <path class="fill--dark" d="M120.854 20C121.339 21.7547 122.581 23.116 124.728 23.116C126.109 23.116 127.155 22.6493 127.864 21.716L130.776 23.396C129.395 25.3933 127.36 26.392 124.672 26.392C122.357 26.392 120.5 25.692 119.1 24.292C117.7 22.892 117 21.128 117 19C117 16.8907 117.691 15.136 119.072 13.736C120.453 12.3173 122.227 11.608 124.392 11.608C126.445 11.608 128.135 12.3173 129.46 13.736C130.804 15.1547 131.476 16.9093 131.476 19C131.476 19.4667 131.429 19.4773 131.336 20H120.854ZM120.854 17H127.733C127.506 16.383 127.229 16.0227 126.576 15.556C125.941 15.0893 125.213 15 124.392 15C123.421 15 122.619 15.108 121.984 15.612C121.349 16.0973 121.13 16.5 120.854 17Z"></path>
+                <path class="fill--dark" d="M64.56 12V26H61.004V18.0184L57.2579 23.424H56.8099L53.472 18.0184V26H50V12H53.556L57 17.9922L61.004 12H64.56Z"></path>
+              </svg></a></div>
+          <div class="header__slogan">
+            <div class="slogan">
+              <div class="slogan__text">
+                  Готовое решение для <br>медицинского центра</div>
+            </div>
+          </div>
+        </div>
+        <div class="header__right-part">
+          <div class="header__top-part border-bottom">
+            <div class="header__top-item menus">
+              <ul class="menu-topest"> 
+                <li class="menu-topest__item"> <a class="menu-topest__link text--dark color-theme-hover" href="#"> <span>О клинике</span></a></li>
+                <li class="menu-topest__item"> <a class="menu-topest__link text--dark color-theme-hover" href="#"> <span>Пациенту</span></a></li>
+                <li class="menu-topest__item"> <a class="menu-topest__link text--dark color-theme-hover" href="#"> <span>Вопросы и ответы </span></a></li>
+                <li class="menu-topest__item"> <a class="menu-topest__link text--dark color-theme-hover" href="#"> <span>Полезные статьи</span></a></li>
+                <li class="menu-topest__item"> <a class="menu-topest__link text--dark color-theme-hover" href="#"> <span>Карта сайта</span></a></li>
+                <li class="menu-topest__more hidden"><span class="text--dark color-theme-hover">Карта сайта</span>
+                  <ul class="dropdown"></ul>
+                </li>
+              </ul>
+            </div>
+            <div class="header__top-item">
+              <div class="line-block">
+                <div class="line-block__item"> 
+                  <div class="regions" title="Регионы">
+                    <div class="regions__chooser text--dark color-theme-hover"><span class="icon-block__only-icon hidden"><i class="svg inline svg-inline-region"> 
+                          <svg class="fill--dark" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.8695 3.28961C17.7476 3.65856 13.7182 15.7844 13.5164 16.3397C13.0884 17.5176 11.9748 18.0896 10.9275 17.9886C9.98549 17.8977 8.97159 17.2296 8.71591 16.027C8.64542 15.6955 7.84346 12.2376 7.45067 10.5446L5.28573 10.0452C3.75087 9.69123 2.17192 9.32733 1.93279 9.27244C-0.536978 8.70562 -0.662723 5.27198 1.6877 4.46901C1.9085 4.39358 4.49875 3.53169 7.30008 2.59955C7.61163 2.49588 7.9258 2.39135 8.2396 2.28693C9.81201 1.7637 11.3811 1.24153 12.5804 0.842007C13.1801 0.642225 13.6869 0.473258 14.0553 0.350216L14.4971 0.202439L14.6268 0.158793L14.6648 0.145927C14.6752 0.142376 14.678 0.141384 14.6764 0.141954C16.6095 -0.533077 18.5227 1.31235 17.8695 3.28961ZM13.9915 2.47947C13.966 2.48796 13.9403 2.49653 13.9143 2.50521C12.4714 2.98622 10.1504 3.75851 7.96284 4.48642C6.60482 4.9383 5.2982 5.37307 4.28495 5.71044C4.07339 5.78088 3.87462 5.84707 3.69084 5.90829C3.2288 6.06219 2.86151 6.18464 2.624 6.26401C2.46939 6.31567 2.36977 6.34908 2.33477 6.36103C1.86417 6.5218 1.89965 7.2133 2.38053 7.32367C2.43013 7.33505 2.53674 7.35958 2.6882 7.39446C2.9416 7.45282 3.32053 7.54013 3.76801 7.64326C3.96195 7.68796 4.16877 7.73564 4.38382 7.78521C6.25163 8.21579 8.74095 8.78995 8.81298 8.80727C8.92389 8.83394 9.13153 8.93572 9.18838 9.18247C9.19839 9.22593 9.24794 9.43949 9.32332 9.76435C9.52383 10.6285 9.90706 12.2802 10.2149 13.6127C10.2654 13.831 10.3138 14.0407 10.359 14.237C10.4579 14.6659 10.5417 15.0306 10.5986 15.2806C10.6362 15.4461 10.6621 15.5613 10.6728 15.6114C10.7689 16.0634 11.4474 16.176 11.636 15.6572C11.6491 15.6209 11.681 15.5283 11.7288 15.3871C11.8082 15.1531 11.9317 14.7859 12.0873 14.3214C12.1502 14.1336 12.2184 13.9298 12.291 13.7125C13.1751 11.0685 14.72 6.42381 15.4975 4.08466C15.5064 4.0578 15.5152 4.03125 15.524 4.005C15.6188 3.71969 15.7014 3.47107 15.769 3.26752C15.8828 2.92493 15.9542 2.71003 15.9698 2.66274C16.1002 2.26789 15.7107 1.8988 15.3363 2.02956C15.2899 2.04576 15.0626 2.12198 14.699 2.24341C14.5011 2.3095 14.2629 2.38899 13.9915 2.47947Z"></path>
+                          </svg></i></span><span class="icon-block__icon"> <i class="svg inline svg-inline-region"> 
+                          <svg class="fill--dark" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9007 2.09972C10.8615 2.1188 10.821 2.1353 10.7796 2.1491L4.34943 4.29249L7.18639 5.14358C7.50836 5.24017 7.76027 5.49208 7.85686 5.81406L8.70795 8.65101L10.8513 2.22083C10.8651 2.17942 10.8816 2.13896 10.9007 2.09972ZM7.25032 10.7524C7.25207 10.7648 7.25403 10.7777 7.25624 10.7909C7.27412 10.8981 7.31173 11.0564 7.39694 11.2268C7.4841 11.4012 7.63054 11.6059 7.86893 11.7648C8.11358 11.9279 8.39484 12.0024 8.68121 12.0024C8.96759 12.0024 9.24885 11.9279 9.49349 11.7648C9.73188 11.6059 9.87833 11.4012 9.96549 11.2268C10.0507 11.0564 10.0883 10.8981 10.1062 10.7909C10.1073 10.7843 10.1083 10.7779 10.1093 10.7715L12.7308 2.90695C12.7308 2.90692 12.7308 2.90689 12.7309 2.90686C12.7485 2.86738 12.7713 2.81407 12.796 2.74984C12.8444 2.62419 12.9055 2.44262 12.9477 2.23194C13.0176 1.88228 13.1053 1.09147 12.5071 0.49332C11.909 -0.104839 11.1182 -0.017172 10.7685 0.0527581C10.5578 0.0948957 10.3763 0.15609 10.2506 0.204419C10.1864 0.229123 10.1331 0.251898 10.0936 0.269597C10.0936 0.26961 10.0935 0.269623 10.0935 0.269636L2.22891 2.89115C2.22257 2.89213 2.21612 2.89316 2.20958 2.89425C2.10231 2.91213 1.94401 2.94974 1.77361 3.03495C1.59928 3.12211 1.39454 3.26856 1.23561 3.50695C1.07251 3.7516 0.998047 4.03286 0.998047 4.31923C0.998047 4.6056 1.07251 4.88686 1.23561 5.13151C1.39454 5.3699 1.59928 5.51634 1.77361 5.60351C1.94401 5.68871 2.10231 5.72633 2.20958 5.7442C2.22279 5.74641 2.23561 5.74837 2.248 5.75012L6.09594 6.90451L7.25032 10.7524Z"></path>
+                          </svg></i></span><span class="regions__name text--dark">Москва</span><span class="more-arrow">
+                        <svg class="fill--dark" width="7" height="5" viewBox="0 0 7 5" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.55157 0.0181274H1.45448C1.05285 0.0181274 0.815132 0.46773 1.04127 0.799648L3.08402 3.79799C3.28217 4.08883 3.71079 4.08939 3.90971 3.79907L5.96405 0.800736C6.19139 0.468921 5.9538 0.0181274 5.55157 0.0181274Z"></path>
+                        </svg></span></div>
+                  </div>
+                </div>
+                <div class="line-block__item">
+                  <div class="phones">
+                    <div class="phones__phones-wrapper">
+                      <div class="phones__inner"><span class="icon-block__only-icon hidden"><i class="svg inline svg-inline-region"> 
+                            <svg class="fill--dark" width="14" height="18" viewBox="0 0 14 18" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.63104 7.97841C6.80463 8.37048 7.0041 8.78717 7.15518 9.07225C7.27009 9.28907 7.49877 9.67951 7.75313 10.0735C7.76214 10.0675 7.77119 10.0616 7.78029 10.0557C8.42453 9.63686 9.0857 9.68158 9.33213 9.70774C9.65095 9.7416 9.94005 9.82627 10.1562 9.90146C10.5996 10.0556 11.0572 10.2844 11.4507 10.5088C11.8534 10.7384 12.2607 11.0047 12.6067 11.2698C12.7791 11.4018 12.9587 11.5506 13.1228 11.7095C13.2598 11.8422 13.4996 12.0889 13.6819 12.4208C13.9567 12.9214 13.9912 13.4324 13.9984 13.6733C14.0076 13.9837 13.9774 14.2994 13.9216 14.5917C13.8662 14.8818 13.7732 15.2138 13.6215 15.5388C13.4853 15.8308 13.2157 16.3046 12.7088 16.6593C12.2763 16.9621 12.101 17.0614 11.5704 17.3623C11.5097 17.3967 11.4445 17.4337 11.3736 17.4739C10.0199 18.2431 8.63271 17.9822 7.88102 17.8407C7.83467 17.832 7.79075 17.8237 7.74939 17.8162C6.75715 17.6353 5.7137 16.9402 4.80916 16.0871C3.83349 15.1669 2.7972 13.855 1.8574 12.1001C-0.0332021 8.56968 -0.11428 5.48344 0.0632851 4.44905C0.155366 3.91264 0.377274 3.31038 0.67849 2.76835C0.975733 2.23348 1.45254 1.57218 2.16387 1.10241C2.86272 0.640891 3.08665 0.498187 3.5503 0.267086C4.05424 0.0159067 4.54851 -0.00825558 4.84873 0.00182873C5.18399 0.01309 5.50575 0.0758517 5.78987 0.161581C6.29082 0.312738 7.02383 0.643641 7.53773 1.30319C7.84738 1.70061 7.96266 2.13768 8.0032 2.29536C8.0629 2.52757 8.10186 2.76842 8.12854 2.98699C8.18252 3.42919 8.20461 3.93488 8.19668 4.4186C8.1889 4.89393 8.15099 5.42764 8.05633 5.9073C8.00998 6.14217 7.93607 6.43773 7.80765 6.73085C7.7078 6.95878 7.43069 7.53172 6.78987 7.89289C6.7363 7.92309 6.68325 7.95156 6.63104 7.97841ZM4.36756 7.68433C4.55311 8.29107 5.08198 9.4331 5.38688 10.0084C5.69177 10.5837 6.4713 11.8462 6.90539 12.2852C7.33947 12.7242 7.68815 12.619 7.8981 12.5196C7.99603 12.4732 8.11572 12.3629 8.26158 12.2285C8.42842 12.0748 8.62948 11.8895 8.87134 11.7322C9.32463 11.4376 11.633 12.8464 11.9276 13.3829C12.1 13.6969 11.9533 14.7465 11.561 15.0211C11.208 15.2682 11.1075 15.3251 10.5781 15.6255C10.5193 15.6588 10.4551 15.6952 10.3847 15.7353C9.68103 16.1351 8.95879 16.0037 8.10853 15.8487C7.25828 15.6936 5.31836 14.3246 3.62164 11.1563C1.92491 7.98792 1.93885 5.3504 2.03552 4.78725C2.13219 4.22409 2.57448 3.22841 3.267 2.77107C3.95952 2.31373 4.09679 2.22961 4.44334 2.05688C4.78989 1.88414 5.64012 2.12285 5.95894 2.53204C6.27777 2.94122 6.32266 5.86013 5.80696 6.15079C5.54379 6.29912 5.29676 6.38092 5.09355 6.44822C4.89855 6.5128 4.74389 6.56401 4.65399 6.64783C4.65164 6.65003 4.64927 6.65224 4.64688 6.65446C4.4631 6.8257 4.18439 7.08538 4.36756 7.68433Z"></path>
+                            </svg></i></span><span class="icon-block__icon"><i class="svg inline svg-inline-region"> 
+                            <svg class="fill--dark" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M4.34544 9.19035C4.3752 9.1854 4.40497 9.18018 4.43443 9.17502C4.57281 9.15079 4.70419 9.12778 4.79424 9.13924C4.98831 9.16393 5.27614 9.5452 5.52934 10.0011C5.80442 10.4963 6.00721 10.9435 5.99815 11.2339C5.9891 11.5243 5.52934 11.9971 5.27589 11.9988C5.02244 12.0005 4.84757 11.9988 4.38109 11.9511C3.9146 11.9034 3.24475 11.4539 3.05287 11.15C3.01142 11.0843 2.9725 11.0222 2.93476 10.9589C2.79777 10.7292 2.67639 10.4843 2.50683 10.0011C2.38177 9.64464 2.27993 9.27989 2.2013 8.9099C2.14516 8.64574 2.10086 8.3789 2.06839 8.11052C2.02384 7.74223 2.00157 7.37103 2.00158 6.99983C2.00159 6.62863 2.02389 6.25743 2.06846 5.88914C2.09963 5.63166 2.14168 5.37559 2.19462 5.12194C2.27415 4.74093 2.37824 4.36536 2.50691 3.99859C2.67086 3.53124 2.78974 3.27887 2.92127 3.05774C2.96323 2.9872 3.00647 2.91984 3.05287 2.8497C3.24475 2.55965 3.88724 2.09621 4.38109 2.04852C4.8225 2.0059 5.01031 2.00383 5.20555 2.00168C5.22875 2.00142 5.25205 2.00116 5.27589 2.00084C5.50043 1.99777 5.99548 2.46384 5.99815 2.76576C6.00082 3.06768 5.80442 3.50335 5.52934 3.99859C5.27614 4.45445 5.03412 4.83208 4.79424 4.86041C4.67301 4.87473 4.50319 4.84587 4.34543 4.81906C4.34446 4.8189 4.34349 4.81873 4.34253 4.81857C4.18927 4.79252 4.04775 4.76868 3.97373 4.78862C3.82312 4.82918 3.54967 4.93563 3.49577 5.30943C3.4932 5.32726 3.49073 5.34436 3.48836 5.36079C3.44104 5.68869 3.43248 5.74799 3.41183 5.99941C3.38433 6.33416 3.37058 6.66702 3.37058 6.99987C3.37058 7.3327 3.38433 7.66553 3.41183 8.00024L3.4131 8.0158C3.43387 8.26866 3.44294 8.37914 3.49577 8.69023C3.54967 9.00762 3.74545 9.17549 3.97986 9.2127C4.08232 9.22896 4.21374 9.21225 4.34544 9.19035ZM5.37457 6.77929C6.14981 6.56283 6.59901 5.993 6.72764 5.82983L6.72889 5.82825C6.95961 5.53558 7.15007 5.20246 7.27928 4.96984C7.43376 4.69172 7.59825 4.374 7.72726 4.05043C7.84309 3.75989 8.00443 3.28778 7.99965 2.74807C7.99459 2.17599 7.77645 1.73588 7.64424 1.50955C7.49263 1.24999 7.31188 1.03239 7.1437 0.862322C6.97566 0.692392 6.7691 0.518305 6.5318 0.372388C6.36872 0.272112 5.89055 -0.00858388 5.24849 0.000201648C5.22601 0.000509335 5.20348 0.000767052 5.18064 0.00102835C4.96138 0.00353635 4.71253 0.00638317 4.18864 0.056969C3.48664 0.124753 2.88759 0.440169 2.52245 0.674477C2.16526 0.903692 1.69714 1.27167 1.38331 1.74608C1.09444 2.18276 0.885227 2.57501 0.618097 3.33648C0.204199 4.51633 4.27173e-05 5.76124 6.70177e-09 6.99976C-4.27039e-05 8.23838 0.204061 9.48338 0.618057 10.6633C0.893193 11.4474 1.10375 11.8115 1.3601 12.2177C1.69309 12.7452 2.20651 13.1264 2.55172 13.3424C2.91355 13.5689 3.50343 13.8727 4.17747 13.9416C4.7199 13.997 4.96732 14.0017 5.28924 13.9996C5.89878 13.9955 6.3547 13.7409 6.55244 13.6179C6.80037 13.4635 7.01009 13.2804 7.17649 13.1062C7.34392 12.9308 7.51551 12.7142 7.65817 12.4628C7.78234 12.2439 7.98212 11.8299 7.99876 11.2962C8.01649 10.7279 7.84015 10.23 7.72897 9.95186C7.59938 9.62767 7.4336 9.30764 7.27928 9.02981C7.11975 8.74261 6.91803 8.42008 6.68541 8.1374C6.57069 7.99798 6.40884 7.81945 6.202 7.65484C6.06387 7.54492 5.77994 7.33821 5.3746 7.22192C5.37135 7.07433 5.37134 6.92688 5.37457 6.77929Z"></path>
+                            </svg></i></span><a class="text--dark" href="tel:70000000000" rel="nofollow">+7 000 000-00-00 </a>
+                        <div class="phones__dropdown"> 
+                          <div class="dropdown dropdown--relative">
+                            <div class="phones__phone-more dropdown__item color-theme-hover"><a class="phones__phone-link text--dark" href="tel:+700000000">+7 000 000-00-00<span class="phones__phone-descript phones__dropdown-title">Отдел продаж</span></a></div>
+                            <div class="phones__phone-more dropdown__item color-theme-hover"><a class="phones__phone-link text--dark" href="tel:+700000001">+7 000 000-00-01<span class="phones__phone-descript phones__dropdown-title">Бухгалтерия</span></a></div>
+                            <div class="phones__phone-more dropdown__item color-theme-hover"><a class="phones__phone-link text--dark" href="tel:+700000001">+7 000 000-00-02<span class="phones__phone-descript phones__dropdown-title">Директор</span></a></div>
+                            <div class="phones__dropdown-item callback-item"> 
+                              <div class="btn btn-default btn-wide btn-posnawr" data-name="callback" data-event="jqm">Заказать звонок<span></span></div>
+                            </div>
+                            <div class="phones__dropdown-item">
+                              <div class="email__title phones__dropdown-title">E-mail </div>
+                              <div class="phones__dropdown-value"> <a class="email-link text--dark" href="mailto:mail@medc.allcorp3-demo.ru">mail@medc.allcorp3-demo.ru</a></div>
+                            </div>
+                            <div class="phones__dropdown-item">
+                              <div class="addres__title phones__dropdown-title">Адрес</div>
+                              <div class="phones__dropdown-value"> 
+                                <div class="address__text text--dark">Челябинск, ул. Лермонтова 21, 3 этаж, офис 4</div>
+                              </div>
+                            </div>
+                            <div class="phones__dropdown-item social-item">
+                              <div class="social"> 
+                                <ul class="social__items">
+                                  <li class="social__item social__item--image vk"> <a class="social__link" href="vk.com" target="_blank" rel="nofollow" title="ВКонтакте"></a></li>
+                                  <li class="social__item social__item--image tel"><a class="social__link" href="tel.com" target="_blank" rel="nofollow" title="Telegram"></a></li>
+                                  <li class="social__item social__item--image yt"> <a class="social__link" href="youtube.com" target="_blank" rel="nofollow" title="YouTube"></a></li>
+                                  <li class="social__item social__item--image vi"> <a class="social__link" href="viber.com" target="_blank" rel="nofollow" title="Viber"></a></li>
+                                  <li class="social__item social__item--image wh"> <a class="social__link" href="wa.me" target="_blank" rel="nofollow" title="Whats App"></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div><span class="more-arrow">
+                          <svg class="fill--dark" width="7" height="5" viewBox="0 0 7 5" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.55157 0.0181274H1.45448C1.05285 0.0181274 0.815132 0.46773 1.04127 0.799648L3.08402 3.79799C3.28217 4.08883 3.71079 4.08939 3.90971 3.79907L5.96405 0.800736C6.19139 0.468921 5.9538 0.0181274 5.55157 0.0181274Z"></path>
+                          </svg></span>
+                      </div>
+                    </div>
+                    <div class="phones__callback text--dark color-theme-hover" data-name="callback" data-event="jqm" data-param-id="83">Заказать звонок</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__main-inner"> 
+            <div class="header__flex-part--left">
+              <div class="header__main-item header-menu"> 
+                <nav class="mega-menu">
+                  <div class="header-menu__wrapper"> 
+                    <div class="header-menu__item"><a class="header-menu__link text--dark" href="/services/"><span class="header-menu__title">Услуги</span></a>
+                      <div class="header-menu__dropdown-menu header-menu__dropdown-menu--fullW">
+                        <div class="mega-menu__section">
+                          <div class="mega-menu__section_container"> 
+                            <div class="dropdown dropdown--relative"> 
+                              <div class="header-menu__wide-limiter"> 
+                                <ul class="header-menu__dropdown-menu-inner header-menu__dropdown-menu-grids"> 
+                                  <li class="header-menu__dropdown-item header-menu__dropdown-item--img-LEFT"> 
+                                    <div class="header-menu__dropdown-item-img header-menu__dropdown-item-img--LEFT"><a href="/services/vzrosloe-otdelenie/"> <img class="lazyloaded" src="./img/header/servicesDrop1.webp" alt="Взрослое отделение" title="Взрослое отделение"></a></div>
+                                    <div class="header-menu__wide-item-wrapper"><a class="switcher-title text--dark" href="/services/vzrosloe-otdelenie/"> <span>Взрослое отделение</span></a>
+                                      <ul class="header-menu__wide-submenu">
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/services/vzrosloe-otdelenie/vedenie-beremennosti/"> <span class="header-menu__wide-submenu-item-name">Ведение беременности</span></a></span></li>
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/services/vzrosloe-otdelenie/gastroenterologiya/"> <span class="header-menu__wide-submenu-item-name">Гастроэнтерология</span></a></span></li>
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/services/vzrosloe-otdelenie/kardiologiya/"> <span class="header-menu__wide-submenu-item-name">Кардиология</span></a></span></li>
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/services/vzrosloe-otdelenie/terapiya/"> <span class="header-menu__wide-submenu-item-name">Терапия</span></a></span></li>
+                                      </ul>
+                                    </div>
+                                  </li>
+                                  <li class="header-menu__dropdown-item header-menu__dropdown-item--img-LEFT"> 
+                                    <div class="header-menu__dropdown-item-img header-menu__dropdown-item-img--LEFT"><a href="/services/detskoe-otdelenie/"> <img class="lazyloaded" src="./img/header/servicesDrop2.webp" alt="Детское отделение" title="Детское отделение"></a></div>
+                                    <div class="header-menu__wide-item-wrapper"><a class="switcher-title text--dark" href="/services/detskoe-otdelenie/"> <span>Детское отделение</span></a>
+                                      <ul class="header-menu__wide-submenu">
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/services/detskoe-otdelenie/pediatriya/"> <span class="header-menu__wide-submenu-item-name">Педиатрия</span></a></span></li>
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/services/detskoe-otdelenie/detskiy-oftalmolog/"> <span class="header-menu__wide-submenu-item-name">Офтальмолог</span></a></span></li>
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/services/detskoe-otdelenie/khirurg-ortoped/"> <span class="header-menu__wide-submenu-item-name">Хирург-ортопед</span></a></span></li>
+                                      </ul>
+                                    </div>
+                                  </li>
+                                  <li class="header-menu__dropdown-item header-menu__dropdown-item--img-LEFT"> 
+                                    <div class="header-menu__dropdown-item-img header-menu__dropdown-item-img--LEFT"><a href="/services/skoraya-pomoshch/"> <img class="lazyloaded" src="./img/header/servicesDrop3.webp" alt="Врач на дом" title="Врач на дом"></a></div>
+                                    <div class="header-menu__wide-item-wrapper"><a class="switcher-title text--dark" href="/services/skoraya-pomoshch/"> <span>Врач на дом</span></a>
+                                      <ul class="header-menu__wide-submenu">
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/services/skoraya-pomoshch/skoraya-pomoshch/"> <span class="header-menu__wide-submenu-item-name">Срочный вызов врача</span></a></span></li>
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/services/skoraya-pomoshch/vyzov-vracha-na-dom/"> <span class="header-menu__wide-submenu-item-name">Вызов врача на дом</span></a></span></li>
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/services/skoraya-pomoshch/statsionar-na-domu/"> <span class="header-menu__wide-submenu-item-name">Стационар на дому</span></a></span></li>
+                                      </ul>
+                                    </div>
+                                  </li>
+                                  <li class="header-menu__dropdown-item header-menu__dropdown-item--img-LEFT"> 
+                                    <div class="header-menu__dropdown-item-img header-menu__dropdown-item-img--LEFT"><a href="/services/diagnostika/"> <img class="lazyloaded" src="./img/header/servicesDrop4.webp" alt="Диагностика" title="Диагностика"></a></div>
+                                    <div class="header-menu__wide-item-wrapper"><a class="switcher-title text--dark" href="/services/diagnostika/"> <span>Диагностика</span></a>
+                                      <ul class="header-menu__wide-submenu">
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/services/diagnostika/analiz-krovi/"> <span class="header-menu__wide-submenu-item-name">Анализы</span></a></span></li>
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/services/diagnostika/uzi/"> <span class="header-menu__wide-submenu-item-name">УЗИ и рентген</span></a></span></li>
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/services/diagnostika/Endoscopy/"> <span class="header-menu__wide-submenu-item-name">Эндоскопия</span></a></span></li>
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/services/diagnostika/kompleksnoe-obsledovanie/"> <span class="header-menu__wide-submenu-item-name">Комплексное обследование</span></a></span></li>
+                                      </ul>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="header-menu__item"><a class="header-menu__link text--dark" href="/product/"><span class="header-menu__title">Каталог</span></a>
+                      <div class="header-menu__dropdown-menu header-menu__dropdown-menu--fullW">
+                        <div class="mega-menu__section">
+                          <div class="mega-menu__section_container"> 
+                            <div class="dropdown dropdown--relative"> 
+                              <div class="header-menu__wide-limiter">
+                                <div class="header-menu__wide-right-part">
+                                  <div class="side_banners">
+                                    <div class="swiper mySwiper">
+                                      <div class="swiper-wrapper"> 
+                                        <div class="swiper-slide"> <a class="slide-link" href="/product/sluh-apparats/"> <img class="link__img-size" src="./img/header/sluh-apparats.webp" alt="Слуховые аппараты на все случаи жизни">
+                                            <div class="slide-title">Слуховые аппараты на все случаи жизни</div></a></div>
+                                        <div class="swiper-slide"> <a class="slide-link" href="/product/sluh-apparats/"> <img class="link__img-size" src="./img/header/optica-apparats.webp" alt="Мужская, женская и детская оптика">
+                                            <div class="slide-title">Мужская, женская и детская оптика</div></a></div>
+                                      </div>
+                                      <div class="swiper-controller__inline">
+                                        <div class="swiper-pagination"> </div>
+                                        <div class="swiper-button swiper-button-next">
+                                          <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6 1L1 6L6 11" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                          </svg>
+                                        </div>
+                                        <div class="swiper-button swiper-button-prev">
+                                          <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6 1L1 6L6 11" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <ul class="header-menu__dropdown-menu-inner header-menu__dropdown-menu-grids"> 
+                                  <li class="header-menu__dropdown-item header-menu__dropdown-item--img-LEFT"> 
+                                    <div class="header-menu__dropdown-item-img header-menu__dropdown-item-img--LEFT"><a href="/product/dom-med-teh/"> <img class="lazyloaded" src="./img/header/catalogDrop1.webp" alt="Домашняя медицинская техника" title="Домашняя медицинская техника"></a></div>
+                                    <div class="header-menu__wide-item-wrapper"><a class="switcher-title text--dark" href="/product/dom-med-teh/"> <span>Домашняя медицинская техника</span></a>
+                                      <ul class="header-menu__wide-submenu">
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/inalyatory/"> <span class="header-menu__wide-submenu-item-name">Ингаляторы</span></a></span></li>
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/stetoskopy/"> <span class="header-menu__wide-submenu-item-name">Стетоскопы</span></a></span></li>
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/termoetry/"> <span class="header-menu__wide-submenu-item-name">Термометры</span></a></span></li>
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/tonometry/"> <span class="header-menu__wide-submenu-item-name">Тонометры </span></a></span></li>
+                                      </ul>
+                                    </div>
+                                  </li>
+                                  <li class="header-menu__dropdown-item header-menu__dropdown-item--img-LEFT"> 
+                                    <div class="header-menu__dropdown-item-img header-menu__dropdown-item-img--LEFT"><a href="/product/dom-med-teh/"> <img class="lazyloaded" src="./img/header/catalogDrop1.webp" alt="Домашняя медицинская техника" title="Домашняя медицинская техника"></a></div>
+                                    <div class="header-menu__wide-item-wrapper"><a class="switcher-title text--dark" href="/product/dom-med-teh/"> <span>Домашняя медицинская техника</span></a>
+                                      <ul class="header-menu__wide-submenu">
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/inalyatory/"> <span class="header-menu__wide-submenu-item-name">Ингаляторы</span></a></span></li>
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/stetoskopy/"> <span class="header-menu__wide-submenu-item-name">Стетоскопы</span></a></span></li>
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/termoetry/"> <span class="header-menu__wide-submenu-item-name">Термометры</span></a></span></li>
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/tonometry/"> <span class="header-menu__wide-submenu-item-name">Тонометры </span></a></span></li>
+                                      </ul>
+                                    </div>
+                                  </li>
+                                  <li class="header-menu__dropdown-item header-menu__dropdown-item--img-LEFT"> 
+                                    <div class="header-menu__dropdown-item-img header-menu__dropdown-item-img--LEFT"><a href="/product/dom-med-teh/"> <img class="lazyloaded" src="./img/header/catalogDrop1.webp" alt="Домашняя медицинская техника" title="Домашняя медицинская техника"></a></div>
+                                    <div class="header-menu__wide-item-wrapper"><a class="switcher-title text--dark" href="/product/dom-med-teh/"> <span>Домашняя медицинская техника</span></a>
+                                      <ul class="header-menu__wide-submenu">
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/inalyatory/"> <span class="header-menu__wide-submenu-item-name">Ингаляторы</span></a></span></li>
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/stetoskopy/"> <span class="header-menu__wide-submenu-item-name">Стетоскопы</span></a></span></li>
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/termoetry/"> <span class="header-menu__wide-submenu-item-name">Термометры</span></a></span></li>
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/tonometry/"> <span class="header-menu__wide-submenu-item-name">Тонометры </span></a></span></li>
+                                      </ul>
+                                    </div>
+                                  </li>
+                                  <li class="header-menu__dropdown-item header-menu__dropdown-item--img-LEFT"> 
+                                    <div class="header-menu__dropdown-item-img header-menu__dropdown-item-img--LEFT"><a href="/product/dom-med-teh/"> <img class="lazyloaded" src="./img/header/catalogDrop1.webp" alt="Домашняя медицинская техника" title="Домашняя медицинская техника"></a></div>
+                                    <div class="header-menu__wide-item-wrapper"><a class="switcher-title text--dark" href="/product/dom-med-teh/"> <span>Домашняя медицинская техника</span></a>
+                                      <ul class="header-menu__wide-submenu">
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/inalyatory/"> <span class="header-menu__wide-submenu-item-name">Ингаляторы</span></a></span></li>
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/stetoskopy/"> <span class="header-menu__wide-submenu-item-name">Стетоскопы</span></a></span></li>
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/termoetry/"> <span class="header-menu__wide-submenu-item-name">Термометры</span></a></span></li>
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/tonometry/"> <span class="header-menu__wide-submenu-item-name">Тонометры </span></a></span></li>
+                                      </ul>
+                                    </div>
+                                  </li>
+                                  <li class="header-menu__dropdown-item header-menu__dropdown-item--img-LEFT"> 
+                                    <div class="header-menu__dropdown-item-img header-menu__dropdown-item-img--LEFT"><a href="/product/dom-med-teh/"> <img class="lazyloaded" src="./img/header/catalogDrop1.webp" alt="Домашняя медицинская техника" title="Домашняя медицинская техника"></a></div>
+                                    <div class="header-menu__wide-item-wrapper"><a class="switcher-title text--dark" href="/product/dom-med-teh/"> <span>Домашняя медицинская техника</span></a>
+                                      <ul class="header-menu__wide-submenu">
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/inalyatory/"> <span class="header-menu__wide-submenu-item-name">Ингаляторы</span></a></span></li>
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/stetoskopy/"> <span class="header-menu__wide-submenu-item-name">Стетоскопы</span></a></span></li>
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/termoetry/"> <span class="header-menu__wide-submenu-item-name">Термометры</span></a></span></li>
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/tonometry/"> <span class="header-menu__wide-submenu-item-name">Тонометры </span></a></span></li>
+                                      </ul>
+                                    </div>
+                                  </li>
+                                  <li class="header-menu__dropdown-item header-menu__dropdown-item--img-LEFT"> 
+                                    <div class="header-menu__dropdown-item-img header-menu__dropdown-item-img--LEFT"><a href="/product/dom-med-teh/"> <img class="lazyloaded" src="./img/header/catalogDrop1.webp" alt="Домашняя медицинская техника" title="Домашняя медицинская техника"></a></div>
+                                    <div class="header-menu__wide-item-wrapper"><a class="switcher-title text--dark" href="/product/dom-med-teh/"> <span>Домашняя медицинская техника</span></a>
+                                      <ul class="header-menu__wide-submenu">
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/inalyatory/"> <span class="header-menu__wide-submenu-item-name">Ингаляторы</span></a></span></li>
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/stetoskopy/"> <span class="header-menu__wide-submenu-item-name">Стетоскопы</span></a></span></li>
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/termoetry/"> <span class="header-menu__wide-submenu-item-name">Термометры</span></a></span></li>
+                                        <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/tonometry/"> <span class="header-menu__wide-submenu-item-name">Тонометры </span></a></span></li>
+                                      </ul>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="header-menu__item"><a class="header-menu__link text--dark" href="/news/"><span class="header-menu__title">Новости</span></a></div>
+                    <div class="header-menu__item"><a class="header-menu__link text--dark" href="/sales/"><span class="header-menu__title">Акции</span></a></div>
+                    <div class="header-menu__item"><a class="header-menu__link text--dark" href="/price/"><span class="header-menu__title">Цены</span></a>
+                      <div class="header-menu__dropdown-menu-lists">
+                        <div class="dropdown"> 
+                          <ul class="header-menu__dropdown-menu-inner"> 
+                            <li class="header-menu__dropdown-item header-menu__dropdown-item--with-dropdown"> <a class="submenu-link text--dark" href="#">Анализы<i class="svg inline svg-inline header-menu__dropdown-right-arrow">
+                                  <svg class="fill-dark" width="3" height="5" viewBox="0 0 3 5" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 2.5L0 5L0 0L3 2.5Z"></path>
+                                  </svg></i></a>
+                              <div class="header-menu__dropdown-menu-lists header-menu__dropdown-menu--submenu">
+                                <ul class="dropdown"> 
+                                  <li class="header-menu__dropdown-item"><a class="text--dark" href="#">Популярные анализы</a></li>
+                                  <li class="header-menu__dropdown-item"><a class="text--dark" href="#">Популярные анализы</a></li>
+                                  <li class="header-menu__dropdown-item"><a class="text--dark" href="#">Популярные анализы</a></li>
+                                  <li class="header-menu__dropdown-item"><a class="text--dark" href="#">Популярные анализы</a></li>
+                                  <li class="header-menu__dropdown-item"><a class="text--dark" href="#">Популярные анализы</a></li>
+                                  <li class="header-menu__dropdown-item"><a class="text--dark" href="#">Популярные анализы</a></li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="header-menu__dropdown-item header-menu__dropdown-item--with-dropdown"> <a class="submenu-link text--dark" href="#">Ведение беременности</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="header-menu__item"><a class="header-menu__link text--dark" href="/company/"><span class="header-menu__title">Клиника</span></a>
+                      <div class="header-menu__dropdown-menu-lists">
+                        <div class="dropdown"> 
+                          <ul class="header-menu__dropdown-menu-inner"> 
+                            <li class="header-menu__dropdown-item header-menu__dropdown-item--with-dropdown"> <a class="submenu-link text--dark" href="#">Анализы<i class="svg inline svg-inline header-menu__dropdown-right-arrow">
+                                  <svg class="fill-dark" width="3" height="5" viewBox="0 0 3 5" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 2.5L0 5L0 0L3 2.5Z"></path>
+                                  </svg></i></a>
+                              <div class="header-menu__dropdown-menu-lists header-menu__dropdown-menu--submenu">
+                                <ul class="dropdown"> 
+                                  <li class="header-menu__dropdown-item"><a class="text--dark" href="#">Популярные анализы</a></li>
+                                  <li class="header-menu__dropdown-item"><a class="text--dark" href="#">Популярные анализы</a></li>
+                                  <li class="header-menu__dropdown-item"><a class="text--dark" href="#">Популярные анализы</a></li>
+                                  <li class="header-menu__dropdown-item"><a class="text--dark" href="#">Популярные анализы</a></li>
+                                  <li class="header-menu__dropdown-item"><a class="text--dark" href="#">Популярные анализы</a></li>
+                                  <li class="header-menu__dropdown-item"><a class="text--dark" href="#">Популярные анализы</a></li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="header-menu__dropdown-item header-menu__dropdown-item--with-dropdown"> <a class="submenu-link text--dark" href="#">Ведение беременности</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="header-menu__item"><a class="header-menu__link text--dark" href="/company/staff/"><span class="header-menu__title">Специалисты</span></a>
+                      <div class="header-menu__dropdown-menu-lists">
+                        <div class="dropdown"> 
+                          <ul class="header-menu__dropdown-menu-inner"> 
+                            <li class="header-menu__dropdown-item header-menu__dropdown-item--with-dropdown"> <a class="submenu-link text--dark" href="#">Анализы</a></li>
+                            <li class="header-menu__dropdown-item header-menu__dropdown-item--with-dropdown"> <a class="submenu-link text--dark" href="#">Ведение беременности</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="header-menu__item"><a class="header-menu__link text--dark" href="/contacts/"><span class="header-menu__title">Контакты</span></a></div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+            <div class="header__main-item">
+              <div class="line-block">
+                <div class="line-block__item">
+                  <div class="header-eyed" title="Версия для слабовидящих"><i class="svg inline svg-inline">
+                      <svg class="fill--dark eyed-hidden" width="20" height="18" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">  
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 16C5.88071 16 7 14.8807 7 13.5C7 12.1193 5.88071 11 4.5 11C3.11929 11 2 12.1193 2 13.5C2 14.8807 3.11929 16 4.5 16ZM4.5 18C6.98528 18 9 15.9853 9 13.5C9 11.0147 6.98528 9 4.5 9C2.01472 9 0 11.0147 0 13.5C0 15.9853 2.01472 18 4.5 18Z"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 16C16.8807 16 18 14.8807 18 13.5C18 12.1193 16.8807 11 15.5 11C14.1193 11 13 12.1193 13 13.5C13 14.8807 14.1193 16 15.5 16ZM15.5 18C17.9853 18 20 15.9853 20 13.5C20 11.0147 17.9853 9 15.5 9C13.0147 9 11 11.0147 11 13.5C11 15.9853 13.0147 18 15.5 18Z"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 14H8V12H12V14Z"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 2C3.34315 2 2 3.34315 2 5V13H0V5C0 2.23858 2.23858 0 5 0H6C6.55228 0 7 0.447715 7 1C7 1.55228 6.55228 2 6 2H5Z"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15 2C16.6569 2 18 3.34315 18 5V13H20V5C20 2.23858 17.7614 0 15 0H14C13.4477 0 13 0.447715 13 1C13 1.55228 13.4477 2 14 2H15Z"></path>
+                      </svg></i></div>
+                </div>
+                <div class="line-block__item">
+                  <div class="header-search" title="Поиск"> <i class="svg inline svg-inline"> 
+                      <svg class="fill--dark" width="19" height="19" viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.99805 0.00244141C4.57977 0.00244141 0.998047 3.58416 0.998047 8.00244C0.998047 12.4207 4.57977 16.0024 8.99805 16.0024C10.8468 16.0024 12.549 15.3754 13.9037 14.3223L17.2909 17.7095C17.6815 18.1001 18.3146 18.1001 18.7052 17.7095C19.0957 17.319 19.0957 16.6859 18.7052 16.2953L15.3179 12.9081C16.371 11.5534 16.998 9.85115 16.998 8.00244C16.998 3.58416 13.4163 0.00244141 8.99805 0.00244141ZM2.99805 8.00244C2.99805 4.68873 5.68434 2.00244 8.99805 2.00244C12.3118 2.00244 14.998 4.68873 14.998 8.00244C14.998 11.3161 12.3118 14.0024 8.99805 14.0024C5.68434 14.0024 2.99805 11.3161 2.99805 8.00244Z"></path>
+                      </svg></i></div>
+                </div>
+                <div class="line-block__item">
+                  <div class="header-cabinet"> <a class="header-cabinet__link" title="Войти" href="/cabinet/"><i class="svg inline svg-inline">
+                        <svg class="fill--dark" width="18" height="19" viewBox="0 0 18 19" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 7.00244C0 3.13645 3.13401 0.00244141 7 0.00244141H11C14.866 0.00244141 18 3.13645 18 7.00244V11.0024C18 14.8684 14.866 18.0024 11 18.0024H7C3.13401 18.0024 0 14.8684 0 11.0024V7.00244ZM7 2.00244C4.23858 2.00244 2 4.24102 2 7.00244V11.0024C2 12.2874 2.48473 13.4592 3.28131 14.3449C3.81254 12.8325 5.05024 11.6528 6.59842 11.2015C5.62776 10.4717 5 9.31039 5 8.00244C5 5.7933 6.79086 4.00244 9 4.00244C11.2091 4.00244 13 5.7933 13 8.00244C13 9.31039 12.3722 10.4717 11.4016 11.2015C12.9498 11.6528 14.1875 12.8325 14.7187 14.3449C15.5153 13.4592 16 12.2874 16 11.0024V7.00244C16 4.24102 13.7614 2.00244 11 2.00244H7ZM7 16.0024C6.29934 16.0024 5.63233 15.8583 5.02702 15.5981C5.22447 14.1325 6.48027 13.0024 8 13.0024H10C11.5197 13.0024 12.7755 14.1325 12.973 15.5981C12.3677 15.8583 11.7007 16.0024 11 16.0024H7ZM7 8.00244C7 6.89787 7.89543 6.00244 9 6.00244C10.1046 6.00244 11 6.89787 11 8.00244C11 9.10701 10.1046 10.0024 9 10.0024C7.89543 10.0024 7 9.10701 7 8.00244Z"></path>
+                        </svg></i></a></div>
+                </div>
+                <div class="line-block__item"> 
+                  <div class="header-button">
+                    <div class="btn btn-default btn-posnawr" data-name="callback">Запись онлайн<span> </span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="header-fixed header-fixed-js">
+      <div class="header__inner">
+        <div class="header__top-part"> 
+          <div class="header__top-inner"> 
+            <div class="header__top-item">
+              <div class="line-block"> 
+                <div class="line-block__item"> 
+                  <div class="logo"> <a href="/">
+                       <svg width="181" height="38" viewBox="0 0 181 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path class="fill-theme-svg" fill-rule="evenodd" clip-rule="evenodd" d="M21.9666 12.5178L21.9611 12.5196L18.5822 9.418L18.5842 9.41617L16.9076 7.89912C12.8274 4.20726 6.50846 4.53027 2.79539 8.59116C-0.94092 12.6775 -0.668537 19.0471 3.43123 22.7686L11.6067 30.1898C15.4776 33.7036 21.2272 33.9741 25.3875 31.0015C21.7555 31.348 17.7082 30.3326 15.2908 28.1269L14.4517 27.3659C14.399 27.3209 14.3468 27.2749 14.2952 27.228L6.11973 19.8068C5.07901 18.8621 4.44851 17.6262 4.24099 16.3281L4.8589 16.1807C6.46278 15.7983 8.15211 16.2311 9.37444 17.3378L17.4261 24.6274C18.1107 25.2471 18.8558 25.7668 19.6422 26.1853C19.7256 26.2277 19.8097 26.2701 19.8947 26.3126C24.8204 28.7735 30.1522 26.9755 33.6154 23.6219L33.61 23.639L34.5567 22.7797C38.6612 19.0538 38.9285 12.6748 35.1812 8.58992C32.6148 5.7924 28.8108 4.77597 25.3604 5.62944L26.835 9.40983C28.7634 9.10659 30.8115 9.74377 32.2336 11.2939C32.9748 12.1019 33.454 13.0574 33.677 14.0551L31.9138 15.0734C29.5613 16.4321 26.7036 16.2948 24.6571 14.7037C23.7656 14.0106 22.8417 13.2664 21.9666 12.5178ZM16.9079 13.2938L14.2238 10.8652C11.7887 8.66176 7.98707 8.84088 5.74741 11.2903C5.5164 11.543 5.31095 11.81 5.13089 12.0881C7.64027 11.8392 10.1621 12.6551 12.0591 14.3725L20.1107 21.6621C22.538 23.8596 26.1643 24.081 28.8409 22.195L30.6363 20.9298L30.6391 20.9337L31.8682 19.8179C32.0621 19.6419 32.2418 19.4558 32.4071 19.261C29.0488 20.5695 25.1732 20.1716 22.202 17.8616C20.4434 16.4944 18.4562 14.8535 16.9029 13.2988L16.9079 13.2938Z" fill="#35CCD1"></path>
+<path class="fill-theme-svg" d="M26.3946 5.42972L27.1837 9.36379L26.5995 9.43783C26.4122 9.46158 26.2282 9.50662 26.051 9.57207C25.4769 9.7842 24.8326 9.66234 24.3755 9.25518L22.0196 7.15627C23.261 6.28239 24.6856 5.70338 26.1846 5.46335L26.3946 5.42972Z" fill="#35CCD1"></path>
+<path class="fill-dark-light" d="M70.8451 20C71.3304 21.7547 72.5813 23.116 74.728 23.116C76.1093 23.116 77.1547 22.6493 77.864 21.716L80.776 23.396C79.3947 25.3933 77.36 26.392 74.672 26.392C72.3573 26.392 70.5 25.692 69.1 24.292C67.7 22.892 67 21.128 67 19C67 16.8907 67.6907 15.136 69.072 13.736C70.4533 12.3173 72.2267 11.608 74.392 11.608C76.4453 11.608 78.1347 12.3173 79.46 13.736C80.804 15.1547 81.476 16.9093 81.476 19C81.476 19.4667 81.4293 19.4773 81.336 20H70.8451ZM70.8451 17H77.7331C77.5061 16.383 77.2293 16.0227 76.576 15.556C75.9413 15.0893 75.2133 15 74.392 15C73.4213 15 72.6187 15.108 71.984 15.612C71.3493 16.0973 71.1211 16.5 70.8451 17Z" fill="#333333"></path>
+<path class="fill-dark-light" d="M97 23H99V30H95.5V26H86.528V30H83V23H84.708C85.5107 21.8053 85.912 19.7653 85.912 17.656V12H97V23ZM88.572 23H93.472V15.248H89.44V17.656C89.44 19.6347 89.1507 21.6747 88.572 23Z" fill="#333333"></path>
+<path class="fill-dark-light" d="M113.612 23H116.014V30.0002H112V26H101V12H104.612V23H110V12H113.612V23Z" fill="#333333"></path>
+<path class="fill-dark-light" d="M143 12H146.612V26H143V21H137.612V26H134V12H137.612V17.612H143V12Z" fill="#333333"></path>
+<path class="fill-dark-light" d="M160.404 12V15.472H156.036V26H152.424V15.472H148V12H160.404Z" fill="#333333"></path>
+<path class="fill-dark-light" d="M170.148 11.608C172.033 11.608 173.639 12.3267 174.964 13.764C176.308 15.1827 176.98 16.928 176.98 19C176.98 21.072 176.308 22.8267 174.964 24.264C173.639 25.6827 172.033 26.392 170.148 26.392C168.188 26.392 166.676 25.7107 165.612 24.348V32H162V12H165.612V13.652C166.676 12.2893 168.188 11.608 170.148 11.608ZM166.704 21.856C167.432 22.584 168.356 22.948 169.476 22.948C170.596 22.948 171.52 22.584 172.248 21.856C172.995 21.1093 173.368 20.1573 173.368 19C173.368 17.8427 172.995 16.9 172.248 16.172C171.52 15.4253 170.596 15.052 169.476 15.052C168.356 15.052 167.432 15.4253 166.704 16.172C165.976 16.9 165.612 17.8427 165.612 19C165.612 20.1573 165.976 21.1093 166.704 21.856Z" fill="#333333"></path>
+<path class="fill-dark-light" d="M120.854 20C121.339 21.7547 122.581 23.116 124.728 23.116C126.109 23.116 127.155 22.6493 127.864 21.716L130.776 23.396C129.395 25.3933 127.36 26.392 124.672 26.392C122.357 26.392 120.5 25.692 119.1 24.292C117.7 22.892 117 21.128 117 19C117 16.8907 117.691 15.136 119.072 13.736C120.453 12.3173 122.227 11.608 124.392 11.608C126.445 11.608 128.135 12.3173 129.46 13.736C130.804 15.1547 131.476 16.9093 131.476 19C131.476 19.4667 131.429 19.4773 131.336 20H120.854ZM120.854 17H127.733C127.506 16.383 127.229 16.0227 126.576 15.556C125.941 15.0893 125.213 15 124.392 15C123.421 15 122.619 15.108 121.984 15.612C121.349 16.0973 121.13 16.5 120.854 17Z" fill="#333333"></path>
+<path class="fill-dark-light" d="M64.56 12V26H61.004V18.0184L57.2579 23.424H56.8099L53.472 18.0184V26H50V12H53.556L57 17.9922L61.004 12H64.56Z" fill="#333333"></path>
+</svg></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="header__top-item header-menu">
+              <div class="mega-menu">
+                <div class="header-menu__wrapper"> 
+                  <div class="header-menu__item"><a class="header-menu__link text--dark" href="/services/"><span class="header-menu__title">Услуги</span></a>
+                    <div class="header-menu__dropdown-menu header-menu__dropdown-menu--fullW">
+                      <div class="mega-menu__section">
+                        <div class="mega-menu__section_container"> 
+                          <div class="dropdown dropdown--relative"> 
+                            <div class="header-menu__wide-limiter"> 
+                              <ul class="header-menu__dropdown-menu-inner header-menu__dropdown-menu-grids"> 
+                                <li class="header-menu__dropdown-item header-menu__dropdown-item--img-LEFT"> 
+                                  <div class="header-menu__dropdown-item-img header-menu__dropdown-item-img--LEFT"><a href="/services/vzrosloe-otdelenie/"> <img class="lazyloaded" src="./img/header/servicesDrop1.webp" alt="Взрослое отделение" title="Взрослое отделение"></a></div>
+                                  <div class="header-menu__wide-item-wrapper"><a class="switcher-title text--dark" href="/services/vzrosloe-otdelenie/"> <span>Взрослое отделение</span></a>
+                                    <ul class="header-menu__wide-submenu">
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/services/vzrosloe-otdelenie/vedenie-beremennosti/"> <span class="header-menu__wide-submenu-item-name">Ведение беременности</span></a></span></li>
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/services/vzrosloe-otdelenie/gastroenterologiya/"> <span class="header-menu__wide-submenu-item-name">Гастроэнтерология</span></a></span></li>
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/services/vzrosloe-otdelenie/kardiologiya/"> <span class="header-menu__wide-submenu-item-name">Кардиология</span></a></span></li>
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/services/vzrosloe-otdelenie/terapiya/"> <span class="header-menu__wide-submenu-item-name">Терапия</span></a></span></li>
+                                    </ul>
+                                  </div>
+                                </li>
+                                <li class="header-menu__dropdown-item header-menu__dropdown-item--img-LEFT"> 
+                                  <div class="header-menu__dropdown-item-img header-menu__dropdown-item-img--LEFT"><a href="/services/detskoe-otdelenie/"> <img class="lazyloaded" src="./img/header/servicesDrop2.webp" alt="Детское отделение" title="Детское отделение"></a></div>
+                                  <div class="header-menu__wide-item-wrapper"><a class="switcher-title text--dark" href="/services/detskoe-otdelenie/"> <span>Детское отделение</span></a>
+                                    <ul class="header-menu__wide-submenu">
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/services/detskoe-otdelenie/pediatriya/"> <span class="header-menu__wide-submenu-item-name">Педиатрия</span></a></span></li>
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/services/detskoe-otdelenie/detskiy-oftalmolog/"> <span class="header-menu__wide-submenu-item-name">Офтальмолог</span></a></span></li>
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/services/detskoe-otdelenie/khirurg-ortoped/"> <span class="header-menu__wide-submenu-item-name">Хирург-ортопед</span></a></span></li>
+                                    </ul>
+                                  </div>
+                                </li>
+                                <li class="header-menu__dropdown-item header-menu__dropdown-item--img-LEFT"> 
+                                  <div class="header-menu__dropdown-item-img header-menu__dropdown-item-img--LEFT"><a href="/services/skoraya-pomoshch/"> <img class="lazyloaded" src="./img/header/servicesDrop3.webp" alt="Врач на дом" title="Врач на дом"></a></div>
+                                  <div class="header-menu__wide-item-wrapper"><a class="switcher-title text--dark" href="/services/skoraya-pomoshch/"> <span>Врач на дом</span></a>
+                                    <ul class="header-menu__wide-submenu">
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/services/skoraya-pomoshch/skoraya-pomoshch/"> <span class="header-menu__wide-submenu-item-name">Срочный вызов врача</span></a></span></li>
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/services/skoraya-pomoshch/vyzov-vracha-na-dom/"> <span class="header-menu__wide-submenu-item-name">Вызов врача на дом</span></a></span></li>
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/services/skoraya-pomoshch/statsionar-na-domu/"> <span class="header-menu__wide-submenu-item-name">Стационар на дому</span></a></span></li>
+                                    </ul>
+                                  </div>
+                                </li>
+                                <li class="header-menu__dropdown-item header-menu__dropdown-item--img-LEFT"> 
+                                  <div class="header-menu__dropdown-item-img header-menu__dropdown-item-img--LEFT"><a href="/services/diagnostika/"> <img class="lazyloaded" src="./img/header/servicesDrop4.webp" alt="Диагностика" title="Диагностика"></a></div>
+                                  <div class="header-menu__wide-item-wrapper"><a class="switcher-title text--dark" href="/services/diagnostika/"> <span>Диагностика</span></a>
+                                    <ul class="header-menu__wide-submenu">
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/services/diagnostika/analiz-krovi/"> <span class="header-menu__wide-submenu-item-name">Анализы</span></a></span></li>
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/services/diagnostika/uzi/"> <span class="header-menu__wide-submenu-item-name">УЗИ и рентген</span></a></span></li>
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/services/diagnostika/Endoscopy/"> <span class="header-menu__wide-submenu-item-name">Эндоскопия</span></a></span></li>
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/services/diagnostika/kompleksnoe-obsledovanie/"> <span class="header-menu__wide-submenu-item-name">Комплексное обследование</span></a></span></li>
+                                    </ul>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header-menu__item"><a class="header-menu__link text--dark" href="/product/"><span class="header-menu__title">Каталог</span></a>
+                    <div class="header-menu__dropdown-menu header-menu__dropdown-menu--fullW">
+                      <div class="mega-menu__section">
+                        <div class="mega-menu__section_container"> 
+                          <div class="dropdown dropdown--relative"> 
+                            <div class="header-menu__wide-limiter">
+                              <div class="header-menu__wide-right-part">
+                                <div class="side_banners">
+                                  <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper"> 
+                                      <div class="swiper-slide"> <a class="slide-link" href="/product/sluh-apparats/"> <img class="link__img-size" src="./img/header/sluh-apparats.webp" alt="Слуховые аппараты на все случаи жизни">
+                                          <div class="slide-title">Слуховые аппараты на все случаи жизни</div></a></div>
+                                      <div class="swiper-slide"> <a class="slide-link" href="/product/sluh-apparats/"> <img class="link__img-size" src="./img/header/optica-apparats.webp" alt="Мужская, женская и детская оптика">
+                                          <div class="slide-title">Мужская, женская и детская оптика</div></a></div>
+                                    </div>
+                                    <div class="swiper-controller__inline">
+                                      <div class="swiper-pagination"> </div>
+                                      <div class="swiper-button swiper-button-next">
+                                        <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M6 1L1 6L6 11" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                      </div>
+                                      <div class="swiper-button swiper-button-prev">
+                                        <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M6 1L1 6L6 11" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <ul class="header-menu__dropdown-menu-inner header-menu__dropdown-menu-grids"> 
+                                <li class="header-menu__dropdown-item header-menu__dropdown-item--img-LEFT"> 
+                                  <div class="header-menu__dropdown-item-img header-menu__dropdown-item-img--LEFT"><a href="/product/dom-med-teh/"> <img class="lazyloaded" src="./img/header/catalogDrop1.webp" alt="Домашняя медицинская техника" title="Домашняя медицинская техника"></a></div>
+                                  <div class="header-menu__wide-item-wrapper"><a class="switcher-title text--dark" href="/product/dom-med-teh/"> <span>Домашняя медицинская техника</span></a>
+                                    <ul class="header-menu__wide-submenu">
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/inalyatory/"> <span class="header-menu__wide-submenu-item-name">Ингаляторы</span></a></span></li>
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/stetoskopy/"> <span class="header-menu__wide-submenu-item-name">Стетоскопы</span></a></span></li>
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/termoetry/"> <span class="header-menu__wide-submenu-item-name">Термометры</span></a></span></li>
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/tonometry/"> <span class="header-menu__wide-submenu-item-name">Тонометры </span></a></span></li>
+                                    </ul>
+                                  </div>
+                                </li>
+                                <li class="header-menu__dropdown-item header-menu__dropdown-item--img-LEFT"> 
+                                  <div class="header-menu__dropdown-item-img header-menu__dropdown-item-img--LEFT"><a href="/product/dom-med-teh/"> <img class="lazyloaded" src="./img/header/catalogDrop1.webp" alt="Домашняя медицинская техника" title="Домашняя медицинская техника"></a></div>
+                                  <div class="header-menu__wide-item-wrapper"><a class="switcher-title text--dark" href="/product/dom-med-teh/"> <span>Домашняя медицинская техника</span></a>
+                                    <ul class="header-menu__wide-submenu">
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/inalyatory/"> <span class="header-menu__wide-submenu-item-name">Ингаляторы</span></a></span></li>
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/stetoskopy/"> <span class="header-menu__wide-submenu-item-name">Стетоскопы</span></a></span></li>
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/termoetry/"> <span class="header-menu__wide-submenu-item-name">Термометры</span></a></span></li>
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/tonometry/"> <span class="header-menu__wide-submenu-item-name">Тонометры </span></a></span></li>
+                                    </ul>
+                                  </div>
+                                </li>
+                                <li class="header-menu__dropdown-item header-menu__dropdown-item--img-LEFT"> 
+                                  <div class="header-menu__dropdown-item-img header-menu__dropdown-item-img--LEFT"><a href="/product/dom-med-teh/"> <img class="lazyloaded" src="./img/header/catalogDrop1.webp" alt="Домашняя медицинская техника" title="Домашняя медицинская техника"></a></div>
+                                  <div class="header-menu__wide-item-wrapper"><a class="switcher-title text--dark" href="/product/dom-med-teh/"> <span>Домашняя медицинская техника</span></a>
+                                    <ul class="header-menu__wide-submenu">
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/inalyatory/"> <span class="header-menu__wide-submenu-item-name">Ингаляторы</span></a></span></li>
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/stetoskopy/"> <span class="header-menu__wide-submenu-item-name">Стетоскопы</span></a></span></li>
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/termoetry/"> <span class="header-menu__wide-submenu-item-name">Термометры</span></a></span></li>
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/tonometry/"> <span class="header-menu__wide-submenu-item-name">Тонометры </span></a></span></li>
+                                    </ul>
+                                  </div>
+                                </li>
+                                <li class="header-menu__dropdown-item header-menu__dropdown-item--img-LEFT"> 
+                                  <div class="header-menu__dropdown-item-img header-menu__dropdown-item-img--LEFT"><a href="/product/dom-med-teh/"> <img class="lazyloaded" src="./img/header/catalogDrop1.webp" alt="Домашняя медицинская техника" title="Домашняя медицинская техника"></a></div>
+                                  <div class="header-menu__wide-item-wrapper"><a class="switcher-title text--dark" href="/product/dom-med-teh/"> <span>Домашняя медицинская техника</span></a>
+                                    <ul class="header-menu__wide-submenu">
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/inalyatory/"> <span class="header-menu__wide-submenu-item-name">Ингаляторы</span></a></span></li>
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/stetoskopy/"> <span class="header-menu__wide-submenu-item-name">Стетоскопы</span></a></span></li>
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/termoetry/"> <span class="header-menu__wide-submenu-item-name">Термометры</span></a></span></li>
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/tonometry/"> <span class="header-menu__wide-submenu-item-name">Тонометры </span></a></span></li>
+                                    </ul>
+                                  </div>
+                                </li>
+                                <li class="header-menu__dropdown-item header-menu__dropdown-item--img-LEFT"> 
+                                  <div class="header-menu__dropdown-item-img header-menu__dropdown-item-img--LEFT"><a href="/product/dom-med-teh/"> <img class="lazyloaded" src="./img/header/catalogDrop1.webp" alt="Домашняя медицинская техника" title="Домашняя медицинская техника"></a></div>
+                                  <div class="header-menu__wide-item-wrapper"><a class="switcher-title text--dark" href="/product/dom-med-teh/"> <span>Домашняя медицинская техника</span></a>
+                                    <ul class="header-menu__wide-submenu">
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/inalyatory/"> <span class="header-menu__wide-submenu-item-name">Ингаляторы</span></a></span></li>
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/stetoskopy/"> <span class="header-menu__wide-submenu-item-name">Стетоскопы</span></a></span></li>
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/termoetry/"> <span class="header-menu__wide-submenu-item-name">Термометры</span></a></span></li>
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/tonometry/"> <span class="header-menu__wide-submenu-item-name">Тонометры </span></a></span></li>
+                                    </ul>
+                                  </div>
+                                </li>
+                                <li class="header-menu__dropdown-item header-menu__dropdown-item--img-LEFT"> 
+                                  <div class="header-menu__dropdown-item-img header-menu__dropdown-item-img--LEFT"><a href="/product/dom-med-teh/"> <img class="lazyloaded" src="./img/header/catalogDrop1.webp" alt="Домашняя медицинская техника" title="Домашняя медицинская техника"></a></div>
+                                  <div class="header-menu__wide-item-wrapper"><a class="switcher-title text--dark" href="/product/dom-med-teh/"> <span>Домашняя медицинская техника</span></a>
+                                    <ul class="header-menu__wide-submenu">
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/inalyatory/"> <span class="header-menu__wide-submenu-item-name">Ингаляторы</span></a></span></li>
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/stetoskopy/"> <span class="header-menu__wide-submenu-item-name">Стетоскопы</span></a></span></li>
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/termoetry/"> <span class="header-menu__wide-submenu-item-name">Термометры</span></a></span></li>
+                                      <li class="header-menu__wide-submenu-item"><span class="header-menu__wide-submenu-item-inner"><a class="submenu-link text--dark" href="/product/dom-med-teh/tonometry/"> <span class="header-menu__wide-submenu-item-name">Тонометры </span></a></span></li>
+                                    </ul>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header-menu__item"><a class="header-menu__link text--dark" href="/news/"><span class="header-menu__title">Новости</span></a></div>
+                  <div class="header-menu__item"><a class="header-menu__link text--dark" href="/sales/"><span class="header-menu__title">Акции</span></a></div>
+                  <div class="header-menu__item"><a class="header-menu__link text--dark" href="/price/"><span class="header-menu__title">Цены</span></a>
+                    <div class="header-menu__dropdown-menu-lists">
+                      <div class="dropdown"> 
+                        <ul class="header-menu__dropdown-menu-inner"> 
+                          <li class="header-menu__dropdown-item header-menu__dropdown-item--with-dropdown"> <a class="submenu-link text--dark" href="#">Анализы<i class="svg inline svg-inline header-menu__dropdown-right-arrow">
+                                <svg class="fill-dark" width="3" height="5" viewBox="0 0 3 5" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M3 2.5L0 5L0 0L3 2.5Z"></path>
+                                </svg></i></a>
+                            <div class="header-menu__dropdown-menu-lists header-menu__dropdown-menu--submenu">
+                              <ul class="dropdown"> 
+                                <li class="header-menu__dropdown-item"><a class="text--dark" href="#">Популярные анализы</a></li>
+                                <li class="header-menu__dropdown-item"><a class="text--dark" href="#">Популярные анализы</a></li>
+                                <li class="header-menu__dropdown-item"><a class="text--dark" href="#">Популярные анализы</a></li>
+                                <li class="header-menu__dropdown-item"><a class="text--dark" href="#">Популярные анализы</a></li>
+                                <li class="header-menu__dropdown-item"><a class="text--dark" href="#">Популярные анализы</a></li>
+                                <li class="header-menu__dropdown-item"><a class="text--dark" href="#">Популярные анализы</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="header-menu__dropdown-item header-menu__dropdown-item--with-dropdown"> <a class="submenu-link text--dark" href="#">Ведение беременности</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header-menu__item"><a class="header-menu__link text--dark" href="/company/"><span class="header-menu__title">Клиника</span></a>
+                    <div class="header-menu__dropdown-menu-lists">
+                      <div class="dropdown"> 
+                        <ul class="header-menu__dropdown-menu-inner"> 
+                          <li class="header-menu__dropdown-item header-menu__dropdown-item--with-dropdown"> <a class="submenu-link text--dark" href="#">Анализы<i class="svg inline svg-inline header-menu__dropdown-right-arrow">
+                                <svg class="fill-dark" width="3" height="5" viewBox="0 0 3 5" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M3 2.5L0 5L0 0L3 2.5Z"></path>
+                                </svg></i></a>
+                            <div class="header-menu__dropdown-menu-lists header-menu__dropdown-menu--submenu">
+                              <ul class="dropdown"> 
+                                <li class="header-menu__dropdown-item"><a class="text--dark" href="#">Популярные анализы</a></li>
+                                <li class="header-menu__dropdown-item"><a class="text--dark" href="#">Популярные анализы</a></li>
+                                <li class="header-menu__dropdown-item"><a class="text--dark" href="#">Популярные анализы</a></li>
+                                <li class="header-menu__dropdown-item"><a class="text--dark" href="#">Популярные анализы</a></li>
+                                <li class="header-menu__dropdown-item"><a class="text--dark" href="#">Популярные анализы</a></li>
+                                <li class="header-menu__dropdown-item"><a class="text--dark" href="#">Популярные анализы</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="header-menu__dropdown-item header-menu__dropdown-item--with-dropdown"> <a class="submenu-link text--dark" href="#">Ведение беременности</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header-menu__item"><a class="header-menu__link text--dark" href="/company/staff/"><span class="header-menu__title">Специалисты</span></a>
+                    <div class="header-menu__dropdown-menu-lists">
+                      <div class="dropdown"> 
+                        <ul class="header-menu__dropdown-menu-inner"> 
+                          <li class="header-menu__dropdown-item header-menu__dropdown-item--with-dropdown"> <a class="submenu-link text--dark" href="#">Анализы</a></li>
+                          <li class="header-menu__dropdown-item header-menu__dropdown-item--with-dropdown"> <a class="submenu-link text--dark" href="#">Ведение беременности</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header-menu__item"><a class="header-menu__link text--dark" href="/contacts/"><span class="header-menu__title">Контакты</span></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="header__top-item">
+              <div class="line-block">
+                <div class="line-block__item">
+                  <div class="header-eyed" title="Версия для слабовидящих"><i class="svg inline svg-inline">
+                      <svg class="fill--dark eyed-hidden" width="20" height="18" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">  
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 16C5.88071 16 7 14.8807 7 13.5C7 12.1193 5.88071 11 4.5 11C3.11929 11 2 12.1193 2 13.5C2 14.8807 3.11929 16 4.5 16ZM4.5 18C6.98528 18 9 15.9853 9 13.5C9 11.0147 6.98528 9 4.5 9C2.01472 9 0 11.0147 0 13.5C0 15.9853 2.01472 18 4.5 18Z"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 16C16.8807 16 18 14.8807 18 13.5C18 12.1193 16.8807 11 15.5 11C14.1193 11 13 12.1193 13 13.5C13 14.8807 14.1193 16 15.5 16ZM15.5 18C17.9853 18 20 15.9853 20 13.5C20 11.0147 17.9853 9 15.5 9C13.0147 9 11 11.0147 11 13.5C11 15.9853 13.0147 18 15.5 18Z"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 14H8V12H12V14Z"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 2C3.34315 2 2 3.34315 2 5V13H0V5C0 2.23858 2.23858 0 5 0H6C6.55228 0 7 0.447715 7 1C7 1.55228 6.55228 2 6 2H5Z"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15 2C16.6569 2 18 3.34315 18 5V13H20V5C20 2.23858 17.7614 0 15 0H14C13.4477 0 13 0.447715 13 1C13 1.55228 13.4477 2 14 2H15Z"></path>
+                      </svg></i></div>
+                </div>
+                <div class="line-block__item">
+                  <div class="header-search" title="Поиск"> <i class="svg inline svg-inline"> 
+                      <svg class="fill--dark" width="19" height="19" viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.99805 0.00244141C4.57977 0.00244141 0.998047 3.58416 0.998047 8.00244C0.998047 12.4207 4.57977 16.0024 8.99805 16.0024C10.8468 16.0024 12.549 15.3754 13.9037 14.3223L17.2909 17.7095C17.6815 18.1001 18.3146 18.1001 18.7052 17.7095C19.0957 17.319 19.0957 16.6859 18.7052 16.2953L15.3179 12.9081C16.371 11.5534 16.998 9.85115 16.998 8.00244C16.998 3.58416 13.4163 0.00244141 8.99805 0.00244141ZM2.99805 8.00244C2.99805 4.68873 5.68434 2.00244 8.99805 2.00244C12.3118 2.00244 14.998 4.68873 14.998 8.00244C14.998 11.3161 12.3118 14.0024 8.99805 14.0024C5.68434 14.0024 2.99805 11.3161 2.99805 8.00244Z"></path>
+                      </svg></i></div>
+                </div>
+                <div class="line-block__item">
+                  <div class="header-cabinet"> <a class="header-cabinet__link" title="Войти" href="/cabinet/"><i class="svg inline svg-inline">
+                        <svg class="fill--dark" width="18" height="19" viewBox="0 0 18 19" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 7.00244C0 3.13645 3.13401 0.00244141 7 0.00244141H11C14.866 0.00244141 18 3.13645 18 7.00244V11.0024C18 14.8684 14.866 18.0024 11 18.0024H7C3.13401 18.0024 0 14.8684 0 11.0024V7.00244ZM7 2.00244C4.23858 2.00244 2 4.24102 2 7.00244V11.0024C2 12.2874 2.48473 13.4592 3.28131 14.3449C3.81254 12.8325 5.05024 11.6528 6.59842 11.2015C5.62776 10.4717 5 9.31039 5 8.00244C5 5.7933 6.79086 4.00244 9 4.00244C11.2091 4.00244 13 5.7933 13 8.00244C13 9.31039 12.3722 10.4717 11.4016 11.2015C12.9498 11.6528 14.1875 12.8325 14.7187 14.3449C15.5153 13.4592 16 12.2874 16 11.0024V7.00244C16 4.24102 13.7614 2.00244 11 2.00244H7ZM7 16.0024C6.29934 16.0024 5.63233 15.8583 5.02702 15.5981C5.22447 14.1325 6.48027 13.0024 8 13.0024H10C11.5197 13.0024 12.7755 14.1325 12.973 15.5981C12.3677 15.8583 11.7007 16.0024 11 16.0024H7ZM7 8.00244C7 6.89787 7.89543 6.00244 9 6.00244C10.1046 6.00244 11 6.89787 11 8.00244C11 9.10701 10.1046 10.0024 9 10.0024C7.89543 10.0024 7 9.10701 7 8.00244Z"></path>
+                        </svg></i></a></div>
+                </div>
+                <div class="line-block__item"> 
+                  <div class="header-button">
+                    <div class="btn btn-default btn-posnawr" data-name="callback">Запись онлайн<span> </span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="main">
+      <div class="container">
+        <section class="section BIG-BANNER-INDEX">
+          <div class="index-block">
+            <div class="maxwidth-banner maxwidth-banner-js">
+              <div class="banners-big__wrapper swiper-wrapper">
+                <div class="swiper-slide mb-slider text-dark-js">
+                  <div class="box banner-big__item" style="background: url('img/index/main-slide1.webp') top center no-repeat;">
+                    <div class="banner-big__container"> 
+                      <div class="banner-big__inner"> 
+                        <div class="banner-big__text">
+                          <div class="banner-big__top-text">Услуги</div>
+                          <div class="banner-big__title">Комплексное<br>обследование<br>за 1 день</div>
+                          <div class="banner-big__text-wrapper"> 
+                            <div class="banner-big__text-block">9 программ комплексного обследования всего организма.<br>Индивидуальный мониторинг и рекомендации специалистов.</div>
+                          </div>
+                          <div class="banner-big__buttons"> 
+                            <div class="banner-big__buttons-item"> 
+                              <div class="big-banner-button"><a class="btn btn-default btn-posnawr" href="/services/diagnostika/kompleksnoe-obsledovanie/">Выбрать программу<span></span></a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="banner-big__img-wrapper"><img class="banner-big__img lazyloaded" src="img/index/komplex-obcledivanya.webp" alt="Комплексное обследование за 1 день"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide mb-slider text-white-js">
+                  <div class="box banner-big__item" style="background: url('img/index/main-slide1.webp') top center no-repeat;">
+                    <div class="banner-big__container"> 
+                      <div class="banner-big__inner"> 
+                        <div class="banner-big__text">
+                          <div class="banner-big__top-text">Услуги</div>
+                          <div class="banner-big__title">Тестируем<br>на COVID-19</div>
+                          <div class="banner-big__text-wrapper"> 
+                            <div class="banner-big__text-block">Проводим ПЦР-исследования и анализы крови на антитела.<br>Результаты — на следующий день.</div>
+                          </div>
+                          <div class="banner-big__buttons"> 
+                            <div class="banner-big__buttons-item"> 
+                              <div class="big-banner-button"><a class="btn btn-default btn-posnawr" href="/services/diagnostika/kompleksnoe-obsledovanie/">Выбрать программу<span></span></a></div>
+                            </div>
+                            <div class="banner-big__buttons-item"> 
+                              <div class="big-banner-button"><a class="btn btn-white btn-posnawr" href="/services/diagnostika/kompleksnoe-obsledovanie/">Подробнее<span></span></a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="banner-big__img-wrapper"><img class="banner-big__img lazyloaded" src="img/index/servise-banner.webp" alt="Комплексное обследование за 1 день"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide mb-slider text-white-js">
+                  <div class="box banner-big__item" style="background: url('img/index/main-slide1.webp') top center no-repeat;">
+                    <div class="banner-big__container"> 
+                      <div class="banner-big__inner"> 
+                        <div class="banner-big__text">
+                          <div class="banner-big__top-text">Услуги</div>
+                          <div class="banner-big__title">Ведение<br>беременности</div>
+                          <div class="banner-big__text-wrapper"> 
+                            <div class="banner-big__text-block">Комфортная беременность и безопасные роды — <br>под наблюдением наших специалистов.</div>
+                          </div>
+                          <div class="banner-big__buttons"> 
+                            <div class="banner-big__buttons-item"> 
+                              <div class="big-banner-button"><a class="btn btn-default btn-posnawr" href="/services/diagnostika/kompleksnoe-obsledovanie/">Выбрать программу<span></span></a></div>
+                            </div>
+                            <div class="banner-big__buttons-item"> 
+                              <div class="big-banner-button"><a class="btn btn-white btn-posnawr" href="/services/diagnostika/kompleksnoe-obsledovanie/">Подробнее<span></span></a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="banner-big__img-wrapper"><img class="banner-big__img lazyloaded" src="img/index/vedeniye-beremenosty.webp" alt="Ведение беременности"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mb-carusel__dots"></div>
+            <div class="mb-nav">
+              <div class="mb-button mb-button-prev"><i class="mb-carousel__button mb-carousel__button--left">
+                  <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 1L1 6L6 11" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg></i></div>
+              <div class="mb-button mb-button-next"><i class="mb-carousel__button mb-carousel__button--rigth">
+                  <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 1L1 6L6 11" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg></i></div>
+            </div>
+          </div>
+        </section>
+        <section class="section TIZERS">
+          <div class="index-block index-block--delimiter">
+            <div class="tizers-list"> 
+              <div class="tizers-list-container maxwidth-theme">
+                <div class="tizers-list__items-wrapper grid-list grid-list--items-4"> 
+                  <div class="tizers-list__item-wrapper grid-list__item">
+                    <div class="tizers-list__item">
+                      <div class="tizers-list__item-image-wrapper"><i class="svg"><svg class="fill-svg--theme-color" width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M36 20C36 18.8954 36.8954 18 38 18H48C49.1046 18 50 18.8954 50 20V39.4576C50 40.6635 49.6367 41.8414 48.9574 42.8377L44.6694 49.1267C44.2969 49.6731 43.6783 50 43.017 50H42.983C42.3217 50 41.7031 49.6731 41.3306 49.1267L37.0426 42.8377C36.3633 41.8414 36 40.6635 36 39.4576V20ZM48 20H38V39.4576C38 40.2615 38.2422 41.0468 38.6951 41.711L42.983 48H43.017L47.3049 41.711C47.7578 41.0468 48 40.2615 48 39.4576V20Z" ></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.8052 8H8C7.44772 8 7 8.44772 7 9V12C7 12.5523 7.44772 13 8 13H29C29.5523 13 30 12.5523 30 12V9C30 8.44771 29.5523 8 29 8H23.1948L22.9493 6.2832C22.6029 3.862 20.5172 2 18 2C15.4828 2 13.3971 3.862 13.0507 6.2832L12.8052 8ZM24.9291 6C24.4439 2.60771 21.5265 0 18 0C14.4735 0 11.5561 2.60771 11.0709 6H8C6.34315 6 5 7.34315 5 9V12C5 13.6569 6.34315 15 8 15H29C30.6569 15 32 13.6569 32 12V9C32 7.34315 30.6569 6 29 6H24.9291Z" ></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18 8C18.5523 8 19 7.55228 19 7C19 6.44772 18.5523 6 18 6C17.4477 6 17 6.44772 17 7C17 7.55228 17.4477 8 18 8ZM18 10C19.6569 10 21 8.65685 21 7C21 5.34315 19.6569 4 18 4C16.3431 4 15 5.34315 15 7C15 8.65685 16.3431 10 18 10Z" ></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3 9H5V11H3C2.44772 11 2 11.4477 2 12V47C2 47.5523 2.44772 48 3 48H33C33.5523 48 34 47.5523 34 47V45H36V47C36 48.6569 34.6569 50 33 50H3C1.34315 50 0 48.6569 0 47V12C0 10.3431 1.34315 9 3 9ZM36 16V12C36 10.3431 34.6569 9 33 9H32V11H33C33.5523 11 34 11.4477 34 12V16H36Z" ></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10 40C10 39.4477 10.4477 39 11 39H25C25.5523 39 26 39.4477 26 40C26 40.5523 25.5523 41 25 41H11C10.4477 41 10 40.5523 10 40Z" ></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13 43C13 42.4477 13.4477 42 14 42H22C22.5523 42 23 42.4477 23 43C23 43.5523 22.5523 44 22 44H14C13.4477 44 13 43.5523 13 43Z" ></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M36 23C36 22.4477 36.4477 22 37 22H48C48.5523 22 49 22.4477 49 23C49 23.5523 48.5523 24 48 24H37C36.4477 24 36 23.5523 36 23Z" ></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M37 39C37 38.4477 37.4477 38 38 38H48C48.5523 38 49 38.4477 49 39C49 39.5523 48.5523 40 48 40H38C37.4477 40 37 39.5523 37 39Z" ></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M38 43C38 42.4477 38.4477 42 39 42H47C47.5523 42 48 42.4477 48 43C48 43.5523 47.5523 44 47 44H39C38.4477 44 38 43.5523 38 43Z" ></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M41 27C41.5523 27 42 27.4477 42 28V36C42 36.5523 41.5523 37 41 37C40.4477 37 40 36.5523 40 36V28C40 27.4477 40.4477 27 41 27Z" ></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M45 16H41V18H45V16ZM41 14C39.8954 14 39 14.8954 39 16V20H47V16C47 14.8954 46.1046 14 45 14H41Z" ></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M21.774 25.3668C22.1237 25.7942 22.0607 26.4242 21.6332 26.774L17.9666 29.774C17.6065 30.0685 17.0909 30.0759 16.7225 29.7918L14.3892 27.9918C13.9519 27.6544 13.8709 27.0265 14.2082 26.5892C14.5456 26.1519 15.1735 26.0709 15.6108 26.4082L17.315 27.7229L20.3668 25.226C20.7942 24.8763 21.4242 24.9393 21.774 25.3668Z" ></path>
+<path d="M34 45C34 44.4477 34.4477 44 35 44C35.5523 44 36 44.4477 36 45C36 45.5523 35.5523 46 35 46C34.4477 46 34 45.5523 34 45Z" ></path>
+<path d="M34 16C34 15.4477 34.4477 15 35 15C35.5523 15 36 15.4477 36 16C36 16.5523 35.5523 17 35 17C34.4477 17 34 16.5523 34 16Z" ></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.93755 26.6337C6.36198 22.6047 9.48831 19 13.5582 19H14.0764C14.4093 19 14.7417 19.0254 15.0708 19.076L15.1395 19.0866C16.4813 19.293 17.4004 19.9431 17.9992 20.5147C18.5984 19.9422 19.5173 19.2933 20.8606 19.0866L20.9293 19.076C21.2583 19.0254 21.5907 19 21.9237 19H22.4418C26.5117 19 29.6381 22.6047 29.0625 26.6337C29.0057 27.0316 28.912 27.4265 28.7853 27.8065C28.1412 29.7388 26.5965 30.9332 25.1573 31.8972L25.1354 31.9119L18.512 35.859C18.1966 36.047 17.8035 36.047 17.4881 35.859L10.8778 31.9197C9.25518 30.9282 7.85325 29.7219 7.21477 27.8065C7.08811 27.4265 6.99439 27.0316 6.93755 26.6337ZM13.5582 21C10.7054 21 8.514 23.5267 8.91745 26.3509C8.95712 26.6286 9.02298 26.9066 9.11213 27.174C9.53105 28.4308 10.4579 29.3185 11.916 30.2102L18 33.8359L24.066 30.2209C25.4677 29.2801 26.4763 28.4089 26.8879 27.174C26.9771 26.9066 27.0429 26.6286 27.0826 26.3509C27.4861 23.5267 25.2946 21 22.4418 21H21.9237C21.6926 21 21.4618 21.0176 21.2334 21.0528L21.1647 21.0634C19.9509 21.2501 19.3343 21.9773 18.8711 22.5235C18.8321 22.5695 18.7943 22.6141 18.7572 22.6571L18.0029 23.5315L17.2453 22.6599C17.2052 22.6139 17.1643 22.5659 17.1222 22.5165C16.6567 21.9703 16.0419 21.249 14.8354 21.0634L14.7667 21.0528C14.5383 21.0176 14.3075 21 14.0764 21H13.5582Z" ></path>
+</svg></i></div>
+                      <div class="tizers-list__item-text-wrapper color--dark-theme"><span class="tizer-list__item-name font_17 title_700">Индивидуальный подход</span><span class="tizer-list__item-descr font_14 color--grey">Объясняем диагнозы и схему лечения доступным языком</span></div>
+                    </div>
+                  </div>
+                  <div class="tizers-list__item-wrapper grid-list__item">
+                    <div class="tizers-list__item">
+                      <div class="tizers-list__item-image-wrapper"><i class="svg"><svg class="fill" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M23 11.9876C25.7614 11.9876 28 9.75131 28 6.99275C28 4.23419 25.7614 1.99793 23 1.99793C20.2386 1.99793 18 4.23419 18 6.99275C18 9.75131 20.2386 11.9876 23 11.9876ZM23 13.9855C26.866 13.9855 30 10.8547 30 6.99275C30 3.13076 26.866 0 23 0C19.134 0 16 3.13076 16 6.99275C16 10.8547 19.134 13.9855 23 13.9855Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35 16.9824C36.6569 16.9824 38 15.6406 38 13.9855C38 12.3304 36.6569 10.9886 35 10.9886C33.3431 10.9886 32 12.3304 32 13.9855C32 15.6406 33.3431 16.9824 35 16.9824ZM35 18.9803C37.7614 18.9803 40 16.7441 40 13.9855C40 11.2269 37.7614 8.99068 35 8.99068C32.2386 8.99068 30 11.2269 30 13.9855C30 16.7441 32.2386 18.9803 35 18.9803Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M24 13.9855V21.9772H22V13.9855H24Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.3017 14.3993C15.0678 12.7338 18.2252 11.9876 23 11.9876L31 11.9876V13.9855L23 13.9855C18.2748 13.9855 15.8332 14.7595 14.6747 15.8521C13.6173 16.8494 13.3971 18.3678 13.972 20.7435C14.4581 22.7524 16.0593 24.2728 17.93 25.3395C19.7708 26.389 21.6862 26.8905 22.5444 26.972H35C35.2566 26.972 35.6638 26.8869 35.9782 26.6608C36.2415 26.4714 36.5 26.147 36.5 25.4736C36.5 24.8002 36.2415 24.4758 35.9782 24.2863C35.6638 24.0603 35.2566 23.9751 35 23.9751L26.9633 23.9751C24.9441 23.9753 20.2797 23.9757 17.1808 19.5532C16.864 19.1012 16.9741 18.4783 17.4265 18.1619C17.879 17.8455 18.5025 17.9555 18.8192 18.4074C21.3013 21.9497 24.9989 21.9772 27 21.9772H35C35.5767 21.9772 36.4194 22.1418 37.1468 22.665C37.9251 23.2248 38.5 24.149 38.5 25.4736C38.5 26.7981 37.9251 27.7224 37.1468 28.2822C36.4194 28.8053 35.5767 28.97 35 28.97H22.4584L22.4169 28.9665C21.2551 28.8698 19.0301 28.2672 16.9386 27.0746C14.8489 25.8831 12.7001 23.9904 12.028 21.213C11.4048 18.6375 11.4346 16.1601 13.3017 14.3993Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M21.6273 6.62675C20.0701 7.65748 18.3162 7.99171 17 7.99171V5.99378C18.0171 5.99378 19.3632 5.72864 20.5227 4.96123C21.6505 4.21473 22.6594 2.95803 23.0136 0.834735L24.9864 1.16319C24.5406 3.83492 23.2162 5.57512 21.6273 6.62675Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M23.4516 4.96975C22.7291 3.37552 22.9161 1.62654 23.1039 0.782258L25.0562 1.21567C24.9107 1.86984 24.8077 3.11775 25.2736 4.14579C25.4952 4.63499 25.8456 5.07696 26.4052 5.4061C26.9727 5.73988 27.8178 5.99378 29.0801 5.99378V7.99171C27.5523 7.99171 26.3357 7.6837 25.3905 7.12778C24.4374 6.56722 23.824 5.7917 23.4516 4.96975Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15 29.9689V24.9741H17V29.9689C17 30.5206 16.5523 30.9679 16 30.9679C15.4477 30.9679 15 30.5206 15 29.9689Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M43.2101 29.2517C42.9035 28.8278 42.3604 28.6468 41.8605 28.8019L41.8303 28.8112C41.6322 28.8727 41.4589 28.9771 41.3159 29.12L32.2071 38.2193C31.3592 39.0664 30.8005 40.1935 30.4551 41.3054C30.1099 42.4165 30 43.4405 30 44.0062V49.001C30 49.5527 29.5523 50 29 50C28.4477 50 28 49.5527 28 49.001V44.0062C28 43.24 28.1401 42.0163 28.5449 40.7132C28.9495 39.411 29.6408 37.9574 30.7929 36.8066L39.9017 27.7072C40.2778 27.3315 40.7341 27.0592 41.2372 26.9032L41.2673 26.8938C42.5873 26.4843 44.0217 26.9624 44.8312 28.0816C45.6723 29.2445 45.6405 30.8234 44.7531 31.9515L40.2863 37.6306C39.9451 38.0645 39.3165 38.1398 38.8822 37.799C38.4479 37.4581 38.3725 36.8301 38.7137 36.3963L43.1805 30.7171C43.5165 30.2899 43.5286 29.692 43.2101 29.2517Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M47.3855 20.9782C47.0822 20.9782 46.8242 21.1994 46.7781 21.4989L45.4211 30.3276L43.4443 30.0243L44.8013 21.1957C44.9972 19.9213 46.0948 18.9803 47.3855 18.9803C48.8295 18.9803 50 20.1496 50 21.5921V32.0211C50 32.841 49.7476 33.641 49.2769 34.3126L43.1612 43.0403C42.8265 43.5179 42.3596 43.8877 41.8177 44.1042L38.6286 45.3785C38.2489 45.5302 38 45.8976 38 46.306V48.9492C38 49.5009 37.5523 49.9482 37 49.9482C36.4477 49.9482 36 49.5009 36 48.9492V46.306C36 45.0806 36.7469 43.9786 37.8858 43.5235L41.0749 42.2492C41.2555 42.177 41.4112 42.0538 41.5228 41.8945L47.6385 33.1669C47.8738 32.831 48 32.431 48 32.0211V21.5921C48 21.2531 47.7249 20.9782 47.3855 20.9782Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.78993 29.2517C7.09647 28.8278 7.63965 28.6468 8.13953 28.8019L8.16966 28.8112C8.36777 28.8727 8.54105 28.9771 8.6841 29.12L17.7929 38.2193C18.6408 39.0664 19.1995 40.1935 19.5449 41.3054C19.8901 42.4165 20 43.4405 20 44.0062V49.001C20 49.5527 20.4477 50 21 50C21.5523 50 22 49.5527 22 49.001V44.0062C22 43.24 21.8599 42.0163 21.4551 40.7132C21.0505 39.411 20.3592 37.9574 19.2071 36.8066L10.0983 27.7072C9.72223 27.3315 9.26586 27.0592 8.76284 26.9032L8.7327 26.8938C7.41267 26.4843 5.97827 26.9624 5.16878 28.0816C4.3277 29.2445 4.35955 30.8234 5.24685 31.9515L9.71368 37.6306C10.0549 38.0645 10.6835 38.1398 11.1178 37.799C11.5521 37.4581 11.6275 36.8301 11.2863 36.3963L6.81949 30.7171C6.48348 30.2899 6.47142 29.692 6.78993 29.2517Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2.61449 20.9782C2.91785 20.9782 3.17582 21.1994 3.22186 21.4989L4.57885 30.3276L6.55569 30.0243L5.19869 21.1957C5.0028 19.9213 3.90522 18.9803 2.61449 18.9803C1.17055 18.9803 0 20.1496 0 21.5921V32.0211C0 32.841 0.252439 33.641 0.723072 34.3126L6.83878 43.0403C7.17349 43.5179 7.6404 43.8877 8.18231 44.1042L11.3714 45.3785C11.751 45.5302 12 45.8976 12 46.306V48.9492C12 49.5009 12.4477 49.9482 13 49.9482C13.5523 49.9482 14 49.5009 14 48.9492V46.306C14 45.0806 13.2531 43.9786 12.1142 43.5235L8.92509 42.2492C8.74445 42.177 8.58882 42.0538 8.47725 41.8945L2.36154 33.1669C2.12622 32.831 2 32.431 2 32.0211V21.5921C2 21.2531 2.27512 20.9782 2.61449 20.9782Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M25.1683 20.9782H27.4777L32.5378 12.223C33.3689 10.7851 35.2095 10.2924 36.6489 11.1226C38.0883 11.9528 38.5815 13.7914 37.7505 15.2294L34.4279 20.9782H36.7373L39.4825 16.2283C40.8658 13.8348 40.0449 10.7742 37.6489 9.39232C35.2529 8.01042 32.1891 8.8305 30.8058 11.224L25.1683 20.9782ZM31.5411 29.9689H29.2317L28.9234 30.5024C28.0924 31.9403 26.2518 32.433 24.8124 31.6028C24.1551 31.2237 23.6951 30.6344 23.4684 29.9689H21.4025C21.6732 31.3351 22.5102 32.582 23.8124 33.3331C26.2084 34.715 29.2721 33.8949 30.6555 31.5013L31.5411 29.9689Z" fill="#606060"></path>
+</svg></i></div>
+                      <div class="tizers-list__item-text-wrapper color--dark-theme"><span class="tizer-list__item-name font_17 title_700">С 2006 года</span><span class="tizer-list__item-descr font_14 color--grey">Наши врачи заботятся о здоровье всей семьи</span></div>
+                    </div>
+                  </div>
+                  <div class="tizers-list__item-wrapper grid-list__item">
+                    <div class="tizers-list__item">
+                      <div class="tizers-list__item-image-wrapper"><i class="svg"><svg class="fill" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M25 27C26.1046 27 27 26.1046 27 25C27 23.8954 26.1046 23 25 23C23.8954 23 23 23.8954 23 25C23 26.1046 23.8954 27 25 27ZM25 29C27.2091 29 29 27.2091 29 25C29 22.7909 27.2091 21 25 21C22.7909 21 21 22.7909 21 25C21 27.2091 22.7909 29 25 29Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M33.0242 17.4758C31.0173 15.3365 28.1647 14 25 14C18.9249 14 14 18.9249 14 25C14 25.0822 14.0009 25.1642 14.0027 25.2459C14.6329 25.0859 15.3008 25 16 25C16 20.0294 20.0294 16 25 16C27.6125 16 29.965 17.1131 31.6091 18.8909L33.0242 17.4758ZM25 36C28.7188 36 32.0066 34.1546 33.9976 31.3296L32.7999 29.4932C31.2447 32.1871 28.3341 34 25 34C24.6204 34 24.2463 33.9765 23.879 33.9309C23.7956 34.5849 23.627 35.239 23.3658 35.8794C23.899 35.9588 24.4447 36 25 36Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M37.9755 12.5245C34.7005 9.11913 30.0977 7 25 7C23.6674 7 22.3687 7.1448 21.1187 7.41953C20.9788 8.1874 20.7203 8.95217 20.3312 9.69191C21.8082 9.242 23.3758 9 25 9C29.5455 9 33.6482 10.8954 36.561 13.939L37.9755 12.5245ZM9.56532 15.7335L10.798 17.6237C9.64929 19.8309 9 22.3396 9 25C9 26.2178 9.13605 27.4038 9.39378 28.5437C8.8092 29.4289 8.39987 30.4271 8.1995 31.4744C7.42474 29.4653 7 27.2822 7 25C7 21.6108 7.93669 18.4404 9.56532 15.7335ZM19.3451 42.0938L20.5236 40.3654C21.9441 40.7785 23.4462 41 25 41C29.7076 41 33.9403 38.967 36.868 35.731L37.3248 36.4313C37.5605 36.7927 37.8839 37.0462 38.2426 37.1917C34.9532 40.7627 30.2379 43 25 43C23.0246 43 21.1234 42.6818 19.3451 42.0938Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M25 2C23.5052 2 22.0437 2.1426 20.6283 2.41494C20.3041 1.76925 19.8945 1.16681 19.4102 0.627295C21.2074 0.216807 23.0784 0 25 0C32.0307 0 38.3836 2.90226 42.9259 7.57409L41.5115 8.98845C37.3313 4.67848 31.4784 2 25 2ZM47.9696 23.8071C47.9898 24.2022 48 24.5999 48 25C48 37.7025 37.7025 48 25 48C12.2975 48 2 37.7025 2 25C2 19.7407 3.76525 14.8937 6.73558 11.0191L6.31235 10.3701C6.05462 9.97497 5.8371 9.57027 5.65782 9.15964C2.12199 13.472 0 18.9882 0 25C0 38.8071 11.1929 50 25 50C38.8071 50 50 38.8071 50 25C50 24.512 49.986 24.0272 49.9584 23.5461L47.9696 23.8071Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M39 22C39.5523 22 40 22.4477 40 23V27C40 27.5523 39.5523 28 39 28C38.4477 28 38 27.5523 38 27V23C38 22.4477 38.4477 22 39 22Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16 31C16.5523 31 17 31.4477 17 32V36C17 36.5523 16.5523 37 16 37C15.4477 37 15 36.5523 15 36V32C15 31.4477 15.4477 31 16 31Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13 4C13.5523 4 14 4.44772 14 5V9C14 9.55228 13.5523 10 13 10C12.4477 10 12 9.55228 12 9V5C12 4.44772 12.4477 4 13 4Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M42 25C42 25.5523 41.5523 26 41 26H37C36.4477 26 36 25.5523 36 25C36 24.4477 36.4477 24 37 24H41C41.5523 24 42 24.4477 42 25Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19 34C19 34.5523 18.5523 35 18 35H14C13.4477 35 13 34.5523 13 34C13 33.4477 13.4477 33 14 33H18C18.5523 33 19 33.4477 19 34Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16 7C16 7.55228 15.5523 8 15 8H11C10.4477 8 10 7.55228 10 7C10 6.44771 10.4477 6 11 6H15C15.5523 6 16 6.44772 16 7Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M44.7071 5.29289C45.0976 5.68342 45.0976 6.31658 44.7071 6.70711L28 23.4142L26.5858 22L43.2929 5.29289C43.6834 4.90237 44.3166 4.90237 44.7071 5.29289Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.6986 37.4618C7.51418 33.1194 10.6151 27 16 27C21.3849 27 24.4858 33.1194 21.3014 37.4618L16.8064 43.5914C16.618 43.8482 16.3185 44 16 44C15.6815 44 15.382 43.8482 15.1936 43.5914L10.6986 37.4618ZM16 29C12.2533 29 10.0958 33.2578 12.3114 36.2791L16 41.309L19.6886 36.2791C21.9042 33.2578 19.7467 29 16 29Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.6986 10.4618C4.51418 6.11944 7.61513 0 13 0C18.3849 0 21.4858 6.11943 18.3014 10.4618L13.8064 16.5914C13.618 16.8482 13.3185 17 13 17C12.6815 17 12.382 16.8482 12.1936 16.5914L7.6986 10.4618ZM13 2C9.25333 2 7.09576 6.25776 9.31141 9.27909L13 14.309L16.6886 9.27909C18.9042 6.25776 16.7467 2 13 2Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M33.6986 28.4618C30.5142 24.1194 33.6151 18 39 18C44.3849 18 47.4858 24.1194 44.3014 28.4618L39.8064 34.5914C39.618 34.8482 39.3185 35 39 35C38.6815 35 38.382 34.8482 38.1936 34.5914L33.6986 28.4618ZM39 20C35.2533 20 33.0958 24.2578 35.3114 27.2791L39 32.309L42.6886 27.2791C44.9042 24.2578 42.7467 20 39 20Z" fill="#606060"></path>
+<path d="M47.962 23.6612C47.962 23.1089 48.4098 22.6612 48.962 22.6612C49.5143 22.6612 49.962 23.1089 49.962 23.6612C49.962 24.2134 49.5143 24.6612 48.962 24.6612C48.4098 24.6612 47.962 24.2134 47.962 23.6612Z" fill="#606060"></path>
+</svg></i></div>
+                      <div class="tizers-list__item-text-wrapper color--dark-theme"><span class="tizer-list__item-name font_17 title_700">3 филиала</span><span class="tizer-list__item-descr font_14 color--grey">Стараемся быть ближе к нашим пациентам</span></div>
+                    </div>
+                  </div>
+                  <div class="tizers-list__item-wrapper grid-list__item">
+                    <div class="tizers-list__item">
+                      <div class="tizers-list__item-image-wrapper"><i class="svg"><svg class="fill" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M36 48C37.1046 48 38 47.1046 38 46C38 44.8954 37.1046 44 36 44C34.8954 44 34 44.8954 34 46C34 47.1046 34.8954 48 36 48ZM36 50C38.2091 50 40 48.2091 40 46C40 43.7909 38.2091 42 36 42C33.7909 42 32 43.7909 32 46C32 48.2091 33.7909 50 36 50Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.2169 32.9762L13.9074 34.1561C6.95004 35.7022 2 41.873 2 49H0C0 40.9356 5.60111 33.9531 13.4735 32.2037L18.7831 31.0238L19.2169 32.9762ZM36.0926 34.1561L30.7831 32.9762L31.2169 31.0238L36.5265 32.2037C44.3989 33.9531 50 40.9356 50 49H48C48 41.873 43.05 35.7022 36.0926 34.1561Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M24.1056 44.4472L18.1056 32.4472L19.8944 31.5528L25 41.7639L30.1056 31.5528L31.8944 32.4472L25.8944 44.4472C25.725 44.786 25.3788 45 25 45C24.6212 45 24.275 44.786 24.1056 44.4472Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35 43V33H37V43H35Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13 40V33H15V40H13Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15.9067 42.4594C15.2182 40.7381 12.7818 40.7381 12.0933 42.4594C11.388 44.2227 11.0175 46.1017 11.0006 48H12C12.5523 48 13 48.4477 13 49C13 49.5523 12.5523 50 12 50H10C9.44772 50 9 49.5523 9 49V48.1364C9 45.9373 9.41962 43.7584 10.2363 41.7166C11.5953 38.3191 16.4047 38.3191 17.7637 41.7166C18.5804 43.7584 19 45.9373 19 48.1364V49C19 49.5523 18.5523 50 18 50H16C15.4477 50 15 49.5523 15 49C15 48.4477 15.4477 48 16 48H16.9994C16.9825 46.1017 16.612 44.2227 15.9067 42.4594Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M27 19C27 18.4477 27.4477 18 28 18H31C31.5523 18 32 18.4477 32 19C32 19.5523 31.5523 20 31 20H28C27.4477 20 27 19.5523 27 19Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.1056 25.5528C20.3526 25.0588 20.9532 24.8586 21.4472 25.1056L22.7639 25.7639C24.1716 26.4678 25.8284 26.4678 27.2361 25.7639L28.5528 25.1056C29.0468 24.8586 29.6474 25.0588 29.8944 25.5528C30.1414 26.0468 29.9412 26.6474 29.4472 26.8944L28.1305 27.5528C26.1598 28.5381 23.8402 28.5381 21.8695 27.5528L20.5528 26.8944C20.0588 26.6474 19.8586 26.0468 20.1056 25.5528Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18 19C18 18.4477 18.4477 18 19 18H22C22.5523 18 23 18.4477 23 19C23 19.5523 22.5523 20 22 20H19C18.4477 20 18 19.5523 18 19Z" fill="#606060"></path>
+<path d="M0 49C0 48.4477 0.447715 48 1 48C1.55228 48 2 48.4477 2 49C2 49.5523 1.55228 50 1 50C0.447715 50 0 49.5523 0 49Z" fill="#606060"></path>
+<path d="M48 49C48 48.4477 48.4477 48 49 48C49.5523 48 50 48.4477 50 49C50 49.5523 49.5523 50 49 50C48.4477 50 48 49.5523 48 49Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35 21.7639L36.1056 21.2111C36.6537 20.9371 37 20.3768 37 19.7639V19.643C37 18.8869 36.531 18.2101 35.8231 17.9447L35.3922 17.7831C31.5914 16.3578 28.7069 13.1933 27.6389 9.2771L27.4307 8.51359C25.0344 12.6013 21.2297 15.6983 16.7067 17.206L14.1861 18.0461C13.4778 18.2823 13 18.9452 13 19.6918V19.7639C13 20.3768 13.3463 20.9371 13.8944 21.2111L15 21.7639V23C15 24.2785 15.9704 26.5561 17.9538 28.6111C19.8836 30.6106 22.3969 32 25 32C27.6031 32 30.1164 30.6106 32.0462 28.6111C34.0296 26.5561 35 24.2785 35 23V21.7639ZM28 3L29.5684 8.75087C30.4674 12.0471 32.8953 14.7107 36.0944 15.9104L36.5253 16.072C38.0139 16.6302 39 18.0532 39 19.643V19.7639C39 21.1343 38.2257 22.3871 37 23C37 27 31.6274 34 25 34C18.3726 34 13 27 13 23C11.7743 22.3871 11 21.1343 11 19.7639V19.6918C11 18.0843 12.0287 16.6571 13.5537 16.1488L16.0742 15.3086C20.5087 13.8304 24.1744 10.6512 26.2648 6.47032L28 3Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M22.9487 4.68377C23.1233 5.20771 22.8402 5.77403 22.3162 5.94868L21.8176 6.11488C18.5467 7.20518 15.843 9.55017 14.301 12.634L13.8944 13.4472C13.6474 13.9412 13.0468 14.1414 12.5528 13.8944C12.0588 13.6474 11.8586 13.0468 12.1056 12.5528L12.5122 11.7396C14.2913 8.18131 17.4111 5.47555 21.1852 4.21751L21.6838 4.05132C22.2077 3.87667 22.774 4.15983 22.9487 4.68377Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M34 7C34 9.00696 35.2219 10.8117 37.0853 11.5571L38.3714 12.0715C38.8842 12.2766 39.1336 12.8586 38.9285 13.3714C38.7234 13.8842 38.1414 14.1336 37.6286 13.9285L36.3425 13.414C33.7198 12.3649 32 9.82477 32 7H34Z" fill="#606060"></path>
+<path d="M32 7C32 6.44771 32.4477 6 33 6C33.5523 6 34 6.44771 34 7C34 7.55228 33.5523 8 33 8C32.4477 8 32 7.55228 32 7Z" fill="#606060"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.409 2.91362C13.6011 4.83026 8 9.54766 8 18C8 24.8602 11.8343 30.4201 13.7071 32.2929L12.2929 33.7071C10.1657 31.5799 6 25.5398 6 18C6 8.48069 12.3613 3.20134 16.5528 1.10557L16.59 1.08697L16.6286 1.07152C18.4515 0.342357 23.1598 -0.874533 28.141 0.993918C31.9086 0.891892 39.6294 3.1405 42.9445 12.6715C44.6482 17.5696 43.837 22.2902 42.2474 26.0863C40.6634 29.8688 38.2742 32.8165 36.6644 34.2474L35.3356 32.7526C36.7258 31.5169 38.9366 28.8146 40.4026 25.3137C41.863 21.8265 42.5518 17.6304 41.0555 13.3285C38.0277 4.62349 31.0251 2.84999 28.0499 2.99875L27.8621 3.00814L27.6838 2.94868C23.3111 1.4287 19.4958 2.01007 17.409 2.91362Z" fill="#606060"></path>
+</svg></i></div>
+                      <div class="tizers-list__item-text-wrapper color--dark-theme"><span class="tizer-list__item-name font_17 title_700">21 доктор</span><span class="tizer-list__item-descr font_14 color--grey">Врачи общей практики и узкие специалисты</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section SERVICES"> 
+          <div class="index-block index-block--delimiter index-block--tb-p80">
+            <div class="services-list">
+              <div class="maxwidth-theme">
+                <div class="index-block__subtitle"></div>
+                <div class="index-block__title-wrapper">
+                  <div class="index-block__part--left">
+                    <h3 class="index-block__title title_700">Здоровье для всей семьи</h3>
+                  </div>
+                  <div class="index-block__part--right fill--dark"><a class="index-block__link text--dark" href="/services/" title="Перейти в раздел">Все услуги </a><span class="index-block__arrow"><i class="svg">
+                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 1L4 4L1 7" stroke="#CACACA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></i></span></div>
+                </div>
+                <div class="index-block__preview">В клинике «Аспро: Медицинский центр» представлены услуги для детей и взрослых. Запишитесь на прием к терапевту или узкому специалисту. Доктор выслушает вас, направит на обследование, а затем подберет индивидуальный план лечения. Если нужно, мы приедем к вам  в любую точку города и осмотрим всю семью.</div>
+              </div>
+              <div class="maxwidth-theme">
+                <div class="grid-list grid-list--items-4"> 
+                  <div class="services-list__wrapper grid-list__item">
+                    <div class="services-list__item"> 
+                      <div class="services-list__item-image-wrapper"> <a class="services-list__item-link" href="/services/vzrosloe-otdelenie/"><span class="services-list__item-image" style="background-image: url('img/index/services/services1.webp')"></span></a><a class="arrow-all" href="/services/vzrosloe-otdelenie/"> <i class="svg arrow-all__item-arrow">
+                            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 1L4 4L1 7" stroke="#CACACA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg></i>
+                          <div class="arrow-all__item-line"> </div></a></div>
+                      <div class="services-list__item-text-wrapper">
+                        <div class="serviser-list__item-title title_700"><a class="text--dark font_18" href="/services/vzrosloe-otdelenie/">Взрослое отделение</a></div>
+                        <div class="services-list__item-childs font_15">
+                          <ul class="list-unstyled">
+                            <li class="services-list__item-childs-item-wrapper"> <a class="services-list__item-childs-item" href="/services/vzrosloe-otdelenie/vedenie-beremennosti/"> <span class="services-list__item-childs-item-name">Ведение беременности</span><span class="services-list__item-childs-item-separator">—</span></a></li>
+                            <li class="services-list__item-childs-item-wrapper"> <a class="services-list__item-childs-item" href="/services/vzrosloe-otdelenie/gastroenterologiya/"> <span class="services-list__item-childs-item-name">Гастроэнтерология</span><span class="services-list__item-childs-item-separator">—</span></a></li>
+                            <li class="services-list__item-childs-item-wrapper"> <a class="services-list__item-childs-item" href="/services/vzrosloe-otdelenie/vedenie-beremennosti/"> <span class="services-list__item-childs-item-name">Кардиология</span><span class="services-list__item-childs-item-separator">—</span></a></li>
+                            <li class="services-list__item-childs-item-wrapper"> <a class="services-list__item-childs-item" href="/services/vzrosloe-otdelenie/vedenie-beremennosti/"> <span class="services-list__item-childs-item-name">Терапия</span></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="services-list__wrapper grid-list__item">
+                    <div class="services-list__item"> 
+                      <div class="services-list__item-image-wrapper"> <a class="services-list__item-link" href="/services/detskoe-otdelenie/"><span class="services-list__item-image" style="background-image: url('img/index/services/services2.webp')"></span></a><a class="arrow-all" href="/services/detskoe-otdelenie/"> <i class="svg arrow-all__item-arrow">
+                            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 1L4 4L1 7" stroke="#CACACA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg></i>
+                          <div class="arrow-all__item-line"> </div></a></div>
+                      <div class="services-list__item-text-wrapper">
+                        <div class="serviser-list__item-title title_700"><a class="text--dark font_18" href="/services/vzrosloe-otdelenie/">Детское отделение</a></div>
+                        <div class="services-list__item-childs font_15">
+                          <ul class="list-unstyled">
+                            <li class="services-list__item-childs-item-wrapper"> <a class="services-list__item-childs-item" href="/services/detskoe-otdelenie/pediatriya/"> <span class="services-list__item-childs-item-name">Педиатрия</span><span class="services-list__item-childs-item-separator">—</span></a></li>
+                            <li class="services-list__item-childs-item-wrapper"> <a class="services-list__item-childs-item" href="/services/detskoe-otdelenie/detskiy-oftalmolog/"> <span class="services-list__item-childs-item-name">Офтальмолог</span><span class="services-list__item-childs-item-separator">—</span></a></li>
+                            <li class="services-list__item-childs-item-wrapper"> <a class="services-list__item-childs-item" href="/services/detskoe-otdelenie/khirurg-ortoped/"> <span class="services-list__item-childs-item-name">Хирург-ортопед</span></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="services-list__wrapper grid-list__item">
+                    <div class="services-list__item"> 
+                      <div class="services-list__item-image-wrapper"> <a class="services-list__item-link" href="/services/vzrosloe-otdelenie/"><span class="services-list__item-image" style="background-image: url('img/index/services/services3.webp')"></span></a><a class="arrow-all" href="/services/vzrosloe-otdelenie/"> <i class="svg arrow-all__item-arrow">
+                            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 1L4 4L1 7" stroke="#CACACA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg></i>
+                          <div class="arrow-all__item-line"> </div></a></div>
+                      <div class="services-list__item-text-wrapper">
+                        <div class="serviser-list__item-title title_700"><a class="text--dark font_18" href="/services/skoraya-pomoshch/">Врач на дом</a></div>
+                        <div class="services-list__item-childs font_15">
+                          <ul class="list-unstyled">
+                            <li class="services-list__item-childs-item-wrapper"> <a class="services-list__item-childs-item" href="/services/skoraya-pomoshch/skoraya-pomoshch/"> <span class="services-list__item-childs-item-name">Срочный вызов врача</span><span class="services-list__item-childs-item-separator">—</span></a></li>
+                            <li class="services-list__item-childs-item-wrapper"> <a class="services-list__item-childs-item" href="/services/skoraya-pomoshch/vyzov-vracha-na-dom/"> <span class="services-list__item-childs-item-name">Вызов врача на дом</span><span class="services-list__item-childs-item-separator">—</span></a></li>
+                            <li class="services-list__item-childs-item-wrapper"> <a class="services-list__item-childs-item" href="/services/skoraya-pomoshch/statsionar-na-domu/"> <span class="services-list__item-childs-item-name">Стационар на дому</span></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="services-list__wrapper grid-list__item">
+                    <div class="services-list__item"> 
+                      <div class="services-list__item-image-wrapper"> <a class="services-list__item-link" href="/services/vzrosloe-otdelenie/"><span class="services-list__item-image" style="background-image: url('img/index/services/services4.webp')"></span></a><a class="arrow-all" href="/services/vzrosloe-otdelenie/"> <i class="svg arrow-all__item-arrow">
+                            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 1L4 4L1 7" stroke="#CACACA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg></i>
+                          <div class="arrow-all__item-line"> </div></a></div>
+                      <div class="services-list__item-text-wrapper">
+                        <div class="serviser-list__item-title title_700"><a class="text--dark font_18" href="/services/diagnostika/">Диагностика</a></div>
+                        <div class="services-list__item-childs font_15">
+                          <ul class="list-unstyled">
+                            <li class="services-list__item-childs-item-wrapper"> <a class="services-list__item-childs-item" href="/services/diagnostika/analiz-krovi/"> <span class="services-list__item-childs-item-name">Анализы</span><span class="services-list__item-childs-item-separator">—</span></a></li>
+                            <li class="services-list__item-childs-item-wrapper"> <a class="services-list__item-childs-item" href="/services/diagnostika/uzi/"> <span class="services-list__item-childs-item-name">УЗИ и рентген</span><span class="services-list__item-childs-item-separator">—</span></a></li>
+                            <li class="services-list__item-childs-item-wrapper"> <a class="services-list__item-childs-item" href="/services/diagnostika/Endoscopy/"> <span class="services-list__item-childs-item-name">Эндоскопия</span><span class="services-list__item-childs-item-separator">—</span></a></li>
+                            <li class="services-list__item-childs-item-wrapper"> <a class="services-list__item-childs-item" href="/services/diagnostika/kompleksnoe-obsledovanie/"> <span class="services-list__item-childs-item-name">Комплексное обследование</span></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section COMPANY_TEXT"> 
+          <div class="company-text__inner index-block index-block--delimiter index-block--tb-p80">
+            <div class="company-text__container maxwidth-theme">
+              <div class="company-text__wrapper flexbox flexbox--direction-row">
+                <div class="company-item__heading flex-1"> 
+                  <div class="index-block__subtitle company-item">О компании</div>
+                  <div class="index-block__title title_700">Клиника мирового класса в Москве</div>
+                  <div class="company-item___text index-block__preview"> 
+                    <p>Клиника «Аспро: Медицинский центр» — это частный медицинский центр для всей семьи с 3&nbsp;филиалами в Челябинске. Есть детское и взрослое направление, отделение диагностики, экстренная помощь с выездом на дом.</p>
+                    <p>У нас наблюдаются целыми семьями, начиная с планирования и ведения беременности. Прием ведут врачи с богатой практикой и узкие специалисты: гастроэнтеролог, кардиолог, детский офтальмолог и хирург-ортопед.</p>
+                    <p>Есть собственная лаборатория анализов и диагностики. Нужен анализ крови или хотите знать, как чувствует себя ваше сердце, печень, ЖКТ? Никуда идти не придется! За 1 день проведем комплексное обследование и выясним, как сохранить здоровье на долгие годы.</p>
+                  </div>
+                  <div class="index-block__btn"> <a class="btn btn-transparent-border btn-posnawr" href="/company/">Подробнее<span></span></a></div>
+                </div>
+                <div class="company-item__picture-wrapper flex-1">
+                  <div class="company-item__picture"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="js/libs.min.js"> </script>
+    <script src="js/main.js"> </script>
+    <script src="js/jqModal.js"> </script>
+  </body>
+</html>
