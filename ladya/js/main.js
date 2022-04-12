@@ -59,12 +59,11 @@ jQuery(function() {
         },
         speed: 1000,
     });
-
-    createMainSlider()
+    createMainSlider('.staffSlider')
 });
 
 function createMainSlider(sliderId = '.mainSlider', sliderPerView = 3, slideBetween = 1) {
-    let mainSlider = new Swiper(sliderId, {
+    new Swiper(sliderId, {
         slidesPerView: sliderPerView,
         spaceBetween: slideBetween,
         navigation: {
