@@ -1,5 +1,4 @@
 jQuery(function() {
-    console.log("hi")
 
     // sticky header 
     jQuery(document).on('scroll', function() {
