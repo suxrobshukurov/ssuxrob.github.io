@@ -9,7 +9,7 @@ class GameScene extends Phaser.Scene {
     }
     update() {
         this.player.move();
-        this.bg.tilePositionX += 0.5;
+        this.bg.tilePositionX += 0.8;
     }
     createBackground() {
         this.bg = this.add.tileSprite(0, 0, config.width, config.height, 'bg').setOrigin(0, 0);
