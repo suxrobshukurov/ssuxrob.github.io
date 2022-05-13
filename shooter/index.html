@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shooter game</title>
+    <style>
+        html {
+            overflow: hidden;
+        }
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        canvas {
+            width: 100%;
+        }
+
+        @font-face {
+            font-family: 'CourseCasual';
+            src: url("assets/fonts/CurseCasual.ttf");
+        }
+
+        .fontPreload {
+            font-family: 'CourseCasual';
+            position: absolute;
+            left: -100px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="fontPreload">.</div>
+<script src="assets/scripts/libs/phaser.js"></script>
+<script src="assets/scripts/scenes/BootScene.js"></script>
+<script src="assets/scripts/scenes/PreloadScene.js"></script>
+<script src="assets/scripts/scenes/StartScene.js"></script>
+<script src="assets/scripts/main.js"></script>
+
+</body>
+
+</html>
