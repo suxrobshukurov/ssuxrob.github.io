@@ -14,8 +14,7 @@
         }
         
         canvas {
-            width: auto;
-            height: 99.6vh;
+            width: 100%;
         }
         
         @font-face {
@@ -27,6 +26,13 @@
             font-family: 'CourseCasual';
             position: absolute;
             left: -100px;
+        }
+        
+        @media (min-width:1486px) {
+            canvas {
+                width: auto;
+                height: 99.2vh;
+            }
         }
     </style>
 </head>
