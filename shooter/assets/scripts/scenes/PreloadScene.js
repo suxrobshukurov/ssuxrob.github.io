@@ -3,11 +3,9 @@ class PreloadScene extends Phaser.Scene {
         super('Preload');
     }
     preload() {
-        console.log('PreloadScene.preload');
-
+        this.load.atlas('dragon', 'assets/sprites/dragon.webp', 'assets/sprites/dragon.json')
     }
     create() {
-        console.log('PreloadScene.create');
         this.scene.start('Start')
     }
 }
