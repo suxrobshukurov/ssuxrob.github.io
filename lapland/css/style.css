@@ -270,7 +270,7 @@ select {
 
 input[type="text"]::-moz-placeholder,
 input[type="file"]::-moz-placeholder,
-input[type="password"::-moz-placeholder],
+input[type="password"]::-moz-placeholder,
 textarea::-moz-placeholder,
 select::-moz-placeholder {
     opacity: 0.5;
@@ -1397,16 +1397,8 @@ opacity:1;*/
     width: auto;
 }
 
-.en .count span.now:before {
-    content: 'TODAY';
-}
-
-.fi .count span.now:before {
-    content: 'TÄNÄÄN';
-}
-
-.cn .count span.now:before {
-    content: '今天';
+.ru .count span.now:before {
+    content: 'CЕГОДНЯ';
 }
 
 .count i {
@@ -1430,18 +1422,9 @@ opacity:1;*/
 animation-duration: 35s;*/
 }
 
-.en .count .ago:before {
-    content: 'Years ago';
+.ru .count .ago:before {
+    content: 'Лет назад ';
 }
-
-.fi .count .ago:before {
-    content: 'Vuosia sitten';
-}
-
-.cn .count .ago:before {
-    content: '几年前';
-}
-
 
 /*----------------*/
 
@@ -2031,123 +2014,52 @@ transition-delay: 45s;*/
 
 /*--*/
 
-.en .slide_1_h:before {
-    content: 'Way back when...';
+.ru .slide_1_h:before {
+    content: 'Давным-давно, когда...
+    ';
 }
-
-.fi .slide_1_h:before {
-    content: 'Kauan sitten, kun...';
-}
-
-.cn .slide_1_h:before {
-    content: '天地初开...';
-}
-
 
 /*--*/
 
-.en .slide_2_h:before {
-    content: 'Born in the kingdom of blue ice';
+.ru .slide_2_h:before {
+    content: 'Родился в царстве голубого льда';
 }
-
-.fi .slide_2_h:before {
-    content: 'Syntynyt sinisten jäätiköiden valtakunnassa';
-}
-
-.cn .slide_2_h:before {
-    content: '始于蓝冰王国';
-}
-
 
 /*--*/
 
-.en .slide_3_h:before {
-    content: 'Water opened its way to you';
+.ru .slide_3_h:before {
+    content: 'Вода открыла тебе путь';
 }
-
-.fi .slide_3_h:before {
-    content: 'Vesi on löytänyt tiensä sinun luokse';
-}
-
-.cn .slide_3_h:before {
-    content: '水初现';
-}
-
 
 /*--*/
 
-.en .slide_4_h:before {
-    content: 'Glaciers melted for you!';
+.ru .slide_4_h:before {
+    content: 'Ледники растаяли для вас!';
 }
-
-.fi .slide_4_h:before {
-    content: 'Jäätiköt ovat sulanneet sinua varten!';
-}
-
-.cn .slide_4_h:before {
-    content: '冰川开始消融！';
-}
-
 
 /*--*/
 
-.en .slide_5_h:before {
-    content: 'Filtered by ancient sands it sprang from the ground';
+.ru .slide_5_h:before {
+    content: 'Отфильтрованный древними песками, он возник из-под земли.';
 }
-
-.fi .slide_5_h:before {
-    content: 'Muinaisten hiekkojen suodattamana se nousi maan alta';
-}
-
-.cn .slide_5_h:before {
-    content: '穿透古老细沙，水终涌现';
-}
-
 
 /*--*/
 
-.en .slide_6_h:before {
-    content: 'Mother Nature made this water crystal clear';
+.ru .slide_6_h:before {
+    content: 'Мать-природа сделала эту воду кристально чистой';
 }
-
-.fi .slide_6_h:before {
-    content: 'Luonto on muovannut tämän veden kristallin puhtaaksi';
-}
-
-.cn .slide_6_h:before {
-    content: '大自然母亲神奇净化，令水纯净透亮';
-}
-
 
 /*--*/
 
-.en .slide_7_h:before {
-    content: 'We saved it for you';
+.ru .slide_7_h:before {
+    content: 'Мы сохранили это для вас';
 }
-
-.fi .slide_7_h:before {
-    content: 'Me talletimme sen sinua varten';
-}
-
-.cn .slide_7_h:before {
-    content: '我们为您呈现';
-}
-
 
 /*--*/
 
-.en .slide_8_h:before {
+.ru .slide_8_h:before {
     content: 'Живите с Лапландской весной!';
 }
-
-.fi .slide_8_h:before {
-    content: 'Elä Lapland Springin kanssa!';
-}
-
-.cn .slide_8_h:before {
-    content: '拉普兰矿泉水与您同在！';
-}
-
 
 /*------------------------------*/
 
@@ -3458,9 +3370,7 @@ transition-delay: 45s;*/
     padding: 1em 0;
 }
 
-.en .section .content.en,
-.fi .section .content.fi,
-.cn .section .content.cn {
+.ru .section .content.ru {
     display: block;
 }
 
@@ -3976,16 +3886,8 @@ margin-left:40%;
     bottom: 7%;
 }
 
-.en .intro-block .btns .learn_more:before {
-    content: 'Learn more';
-}
-
-.fi .intro-block .btns .learn_more:before {
-    content: 'Näytä lisää';
-}
-
-.cn .intro-block .btns .learn_more:before {
-    content: '学到更多';
+.ru .intro-block .btns .learn_more:before {
+    content: 'Учить больше';
 }
 
 .fp-viewing-features1 .intro-block .btns {
@@ -4395,16 +4297,8 @@ ul.sizes-list li div span {
 	color:rgba(36,50,78,1);*/
 }
 
-.en .skip-btn .s-btn:before {
-    content: 'Skip';
-}
-
-.fi .skip-btn .s-btn:before {
-    content: 'Ohita';
-}
-
-.cn .skip-btn .s-btn:before {
-    content: '跳过广告';
+.ru .skip-btn .s-btn:before {
+    content: 'Пропустить';
 }
 
 .on .skip-btn {
